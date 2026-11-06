@@ -7,8 +7,6 @@ macOS **Opiumware** package distributed through the `ufs.sh` installer
 Everything here is derived text. The shipped binaries are **not** redistributed in this
 folder, and no tooling used to produce these files is included either.
 
-Analisis statis murni — tidak ada satu pun payload yang dieksekusi.
-
 **[Join the Discord](https://discord.gg/sdkhDjTex)** · [@pengussy](https://github.com/pengussy) ·
 [q] questions, corrections, next drops. Layout follows
 [pengussy/Hydrogen-Decompiled](https://github.com/pengussy/Hydrogen-Decompiled).
