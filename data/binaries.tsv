@@ -1,0 +1,14 @@
+#  ---------------------------------------------------------------------------
+#  watermarked copy - do not remove this notice
+#  license: proprietary, all rights reserved (see LICENSE)
+#  origin : github.com/pengussy   chat: discord.gg/sdkhDjTex   donate: donate/README.md
+#  file-id: binaries:c96b652a3d
+#  ---------------------------------------------------------------------------
+name	bytes	sha256	arch	note
+installer.sh	7950	b9b188af0e43eb3c8e74c6de94c621aa5be8d733355f5e55655999c3b485563d	bash	installer script, pins Roblox version-b09c93298b5d4cd1
+libOpiumwareNative.dylib	34628056	8cbb1da5b65737769e3dd6b8e6f55aaab9d12784838a84945925164c00cb476f	arm64	executor payload injected into Roblox
+OpiumwareUIV3	13337632	52e6a60b1a31553e4e18ce2651af83867cb6596d5c6b75cddc90a104de61d413	universal	Swift IDE executable
+libAccountManager.dylib	117568	33c1204f117693b45902ea834942b79fcfbc10623bef75ca8427e8c1d75ab1a5	universal	dyld interpose + cookies
+Injector	27328	6450e9a6a1048b4a095e080680e1f8afca4e34c7eec35a65a905d1e95c202ac9	x86_64	stock insert_dylib
+Decompiler	10577088	cd246eb758f13c3d5cc795bccc4e6a43fa914f38552b383b49b27221cd5f544e	universal	Rust decomp-server (luau_lifter)
+LuauLSP	24374752	0f608b1c6ecb8946dddbaf3dffdc4e2a34e2063531a7b8ae0d8f35803b978536	universal	upstream luau-lsp

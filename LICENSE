@@ -1,0 +1,76 @@
+PROPRIETARY LICENSE — ALL RIGHTS RESERVED
+All Rights Reserved
+
+Copyright (c) 2026 @pengussy. All rights reserved.
+
+This repository and everything in it — the tables in `data/`, the disassembly listings, the
+decompiler pseudocode, the documentation, the names, marks and notices attached to them
+(collectively, "the Work") — is made available for reading only, under the terms below.
+It is source-available. It is **not** open source.
+
+
+1. WHAT YOU MAY DO
+
+   You may read, download and privately study the Work. You may quote short excerpts of it for
+   commentary, criticism, research or review, provided every excerpt keeps its attribution and a
+   link back to this repository.
+
+
+2. WHAT YOU MAY NOT DO
+
+   (a) WATERMARKS AND ATTRIBUTION. You may not remove, hide, crop, rename, translate away or
+       otherwise alter any watermark, signature, author name, repository link, Discord invite,
+       copyright notice, or other identifying mark contained in the Work or in any file derived
+       from it. Every redistribution permitted by this license must carry the attribution exactly
+       as it appears here.
+
+   (b) NO SALE, NO COMMERCIAL USE. You may not sell, resell, rent, lease, sublicense, bundle,
+       paywall, monetise, or otherwise exploit the Work or any derivative of it for commercial
+       gain. You may not put it behind an advertisement, a paid membership, a paid API, or a
+       "premium" tier.
+
+   (c) NO CLAIM OF OWNERSHIP. You may not claim, state, imply or suggest that the Work, or any
+       substantial part of it, is your own work, your own analysis, or your own discovery —
+       including by publishing it under your name, in your repository, in your product, or in a
+       write-up that omits the attribution. You may not register, trademark or otherwise assert
+       rights over it.
+
+   (d) NO MODIFIED REDISTRIBUTION. You may not distribute modified, translated, re-generated,
+       re-ordered, stripped or "cleaned up" copies of the Work. Verbatim, unmodified copies may be
+       mirrored only if they keep this license and the attribution intact.
+
+   (e) NO MISREPRESENTATION. You may not present the Work as a decompilation of anything other
+       than the binaries it was derived from, nor present any reconstructed string, table or note
+       as an original source release.
+
+
+3. THIRD-PARTY MATERIAL
+
+   The binaries analysed here are not included and are not licensed by this document. They remain
+   the property of their authors. Nothing in this license grants any right over them, and nothing
+   in it purports to. The Work is derived analysis output: hashes, offsets, tables, disassembly
+   and decompiler pseudocode. Where the Work quotes a string or identifier that belongs to a third
+   party, that quotation is factual reporting of what the analysed binary contains.
+
+
+4. NO WARRANTY
+
+   THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT
+   NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+   NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+   DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+   OUT OF OR IN CONNECTION WITH THE WORK OR ITS USE.
+
+
+5. TERMINATION
+
+   Any breach of section 2 terminates your permission to use the Work immediately and
+   automatically, with no notice and no cure period. On termination you must destroy every copy
+   you hold. The authors may pursue any remedy available for a breach, including for removal of
+   attribution or for commercial exploitation.
+
+
+6. CONTACT
+
+   Permission for anything section 2 forbids must be obtained in writing, in advance, from the
+   author: https://github.com/pengussy — https://discord.gg/sdkhDjTex

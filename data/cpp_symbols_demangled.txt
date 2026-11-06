@@ -1,0 +1,29 @@
+#  ---------------------------------------------------------------------------
+#  watermarked copy - do not remove this notice
+#  license: proprietary, all rights reserved (see LICENSE)
+#  origin : github.com/pengussy   chat: discord.gg/sdkhDjTex   donate: donate/README.md
+#  file-id: cpp_symbols_demangled:8236565d9a
+#  ---------------------------------------------------------------------------
+Execution::ScriptCompilationQueue::Enqueue(N, S, t, __1, basic_string, I, c, N, S, _, char_traits, I, c)
+FileSystem::saveinstance(lua_State*)
+Luau::Compiler::resolveAssignConflicts(P, N, S, _, AstStat)
+MacFileDialog::OpenFile(R, K, N, S, _, Options)
+MacFileDialog::OpenFolder(R, K, N, S, _, Options)
+MacFileDialog::SaveFile(R, K, N, S, _, Options)
+Misc::HttpGet(lua_State*)
+Misc::HttpPost(lua_State*)
+Misc::decompile(lua_State*)
+Misc::openfiledialog(lua_State*)
+Misc::openfilesdialog(lua_State*)
+Misc::openfolderdialog(lua_State*)
+Misc::request(lua_State*)
+Misc::savefiledialog(lua_State*)
+RConsole::QueueConsoleMessage(R, K, N, S, t, __1, basic_string, I, c, N, S, , _, char_traits, I, c)
+RConsole::SendCM(lua_State*, R, K, N, S, t, __1, basic_string, I, c, N, S, _1, c, h, a, r, _, t, r, a, i, t, s, I, c)
+RConsole::printconsole(lua_State*)
+RConsole::rconsoleinput(lua_State*)
+Socket::InitializeConnection(void)
+WebSocket::WSClose(lua_State*)
+WebSocket::connect(lua_State*)
+Yielding::Yield(lua_State*, R, K, N, S, t, __1, function, I, F, N, S, _IF, i, S, _)
+ix::WebSocket::run(void)

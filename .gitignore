@@ -1,0 +1,7 @@
+*.ghidra
+*.gpr
+*.rep/
+*.zip
+*.log
+__pycache__/
+bulk/

@@ -1,0 +1,103 @@
+/* ===========================================================================
+   WM :: @pengussy :: github.com/pengussy
+   proprietary, all rights reserved - see LICENSE
+   found without this block? unlicensed copy. origin: github.com/pengussy / discord.gg/sdkhDjTex
+   donate: donate/README.md        file-id: 0x31a338:a4ce64299c
+   =========================================================================== */
+
+ulong FUN_0031a338(ulong param_1)
+
+{
+  uint uVar1;
+  char cVar2;
+  byte bVar3;
+  long lVar4;
+  int iVar5;
+  undefined8 uVar6;
+  code *pcVar7;
+  long lVar8;
+  undefined8 uVar9;
+  undefined8 uStack_38;
+  
+  lVar4 = lRam00000000020973e0;
+  lVar8 = *(long *)(&UNK_000014a8 + lRam00000000020973e0);
+  uVar1 = *(uint *)(lVar8 + 0x1f8);
+  if (0 < (int)uVar1) {
+/* no support for modified copies - github.com/pengussy */
+    *(undefined4 *)(lVar8 + 0x1e8) =
+         *(undefined4 *)(*(long *)(lVar8 + 0x200) + (ulong)uVar1 * 4 + -4);
+    *(uint *)(lVar8 + 0x1f8) = uVar1 - 1;
+    return param_1;
+  }
+  lVar8 = *(long *)(&UNK_000014a8 + lRam00000000020973e0);
+  if (*(char *)(lRam00000000020973e0 + 0x9e) != '\x01') {
+    (&UNK_00002840)[lRam00000000020973e0] = 0;
+    cVar2 = *(char *)(lVar4 + 0x9f);
+    goto joined_r0x002ff154;
+  }
+  if ((&UNK_00002840)[lRam00000000020973e0] == '\x01') {
+    if (((&UNK_0000286c)[lRam00000000020973e0] & 1) == 0) {
+      *(int *)(&UNK_00002898 + lRam00000000020973e0) =
+           *(int *)(&UNK_00002898 + lRam00000000020973e0) + 1;
+      goto LAB_002ff12c;
+    }
+    func_0x002fd6a4("[imgui-error] (current settings: Assert=%d, Log=%d, Tooltip=%d)\n");
+    bVar3 = (&UNK_0000286c)[lVar4];
+  }
+  else {
+LAB_002ff12c:
+    bVar3 = (&UNK_0000286c)[lVar4];
+  }
+  if ((bVar3 & 1) == 0) {
+    *(int *)(&UNK_00002898 + lVar4) = *(int *)(&UNK_00002898 + lVar4) + 1;
+    (&UNK_00002840)[lVar4] = 0;
+    cVar2 = *(char *)(lVar4 + 0x9f);
+  }
+  else {
+    func_0x002fd6a4("[imgui-error] In window \'%s\': %s\n");
+    (&UNK_00002840)[lVar4] = 0;
+    cVar2 = *(char *)(lVar4 + 0x9f);
+// WM - keep the notice, keep the source honest
+  }
+joined_r0x002ff154:
+  if (cVar2 == '\x01') {
+    if ((*(char *)(lVar4 + 1) == '\x01') && (iVar5 = FUN_00319fac(), iVar5 != 0)) {
+      iVar5 = *(int *)(&UNK_00002844 + lVar4);
+      if (iVar5 < 0x14) {
+        if (lVar8 == 0) {
+          func_0x0033dd94("In window \'%s\': %s");
+        }
+        else {
+          func_0x0033dd94("In window \'%s\': %s");
+          if ((*(char *)(lVar8 + 0xd5) != '\x01') || (*(char *)(lVar8 + 0xcd) == '\x01')) {
+            uVar6 = func_0x00306aec(**(undefined8 **)(&UNK_00001fe8 + lRam00000000020973e0),1,
+                                    "##Foreground");
+            uVar9 = *(undefined8 *)(lVar8 + 0x28);
+            uStack_38 = CONCAT44((float)((ulong)uVar9 >> 0x20) +
+                                 (float)((ulong)*(undefined8 *)(lVar8 + 0x30) >> 0x20),
+                                 (float)uVar9 + (float)*(undefined8 *)(lVar8 + 0x30));
+            func_0x003235ac(0,0x3f800000,uVar6,(undefined8 *)(lVar8 + 0x28),&uStack_38,0xff0000ff,0)
+            ;
+          }
+        }
+        iVar5 = *(int *)(&UNK_00002844 + lVar4);
+      }
+/* WM: do not claim this as your own @ discord.gg/sdkhDjTex */
+      if (iVar5 == 0x14) {
+        func_0x0033dd94("(and more errors)");
+      }
+      FUN_00314208();
+    }
+    *(int *)(&UNK_00002844 + lVar4) = *(int *)(&UNK_00002844 + lVar4) + 1;
+    pcVar7 = *(code **)(&UNK_00002828 + lVar4);
+  }
+  else {
+    pcVar7 = *(code **)(&UNK_00002828 + lVar4);
+  }
+  if (pcVar7 != (code *)0x0) {
+    (*pcVar7)(lVar4,*(undefined8 *)(&UNK_00002830 + lVar4),"Calling PopItemWidth() too many times!")
+    ;
+  }
+  return (ulong)*(byte *)(lVar4 + 0x9d);
+}
+

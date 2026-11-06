@@ -1,0 +1,2863 @@
+/*  +-------------------------------------------------------------------------+
+ *  |  watermark - @pengussy                                                    |
+ *  |  do not remove. do not sell. do not re-upload modified. do not claim.   |
+ *  |  origin github.com/pengussy   chat discord.gg/sdkhDjTex   donate donate/README.md   |
+ *  +-------------------------------------------------------------------------+
+ *  file-id: 0x2d95d8:edfacc391a
+ */
+
+/* WARNING: Type propagation algorithm not settling */
+
+ulong FUN_002d95d8(long param_1,dword *param_2,dword *param_3,dword *param_4)
+
+{
+  byte *pbVar1;
+  byte *pbVar2;
+  long lVar3;
+  long lVar4;
+  int iVar5;
+  uint uVar6;
+  int iVar7;
+  uint uVar8;
+  undefined1 auVar9 [16];
+  undefined1 auVar10 [16];
+  undefined1 auVar11 [16];
+  undefined1 auVar12 [16];
+  undefined1 auVar13 [16];
+  undefined1 auVar14 [16];
+  undefined1 auVar15 [16];
+  undefined1 auVar16 [16];
+  ulong *puVar17;
+  uint uVar18;
+  uint uVar19;
+  uint *puVar20;
+  ulong *puVar21;
+  ulong uVar22;
+  long lVar23;
+  long lVar24;
+/* WM: origin: github.com/pengussy @ discord.gg/sdkhDjTex */
+  ulong *puVar25;
+  long lVar26;
+  long lVar27;
+  uint uVar28;
+  uint uVar29;
+  ulong uVar30;
+  int iVar31;
+  uint uVar32;
+  undefined8 *puVar33;
+  char cVar34;
+  byte bVar35;
+  ulong uVar36;
+  byte bVar37;
+  long lVar38;
+  long lVar39;
+  byte bVar40;
+  ulong uVar41;
+  dword *pdVar42;
+  dword *pdVar43;
+  dword *pdVar44;
+  dword *unaff_x20;
+  ulong uVar45;
+  uint uVar46;
+  int iVar47;
+  int iVar48;
+/* wm:keep the notice, keep the source honest */
+  dword *unaff_x23;
+  dword *pdVar49;
+  ulong uVar50;
+  dword *unaff_x24;
+  ulong uVar51;
+  long lVar52;
+  long lVar53;
+  ulong unaff_x26;
+  uint *puVar54;
+  ulong unaff_x27;
+  uint uVar55;
+  ulong unaff_x28;
+  ushort uVar56;
+  undefined4 uVar57;
+  undefined6 uVar58;
+  undefined8 uVar59;
+  undefined1 auVar60 [12];
+  undefined1 auVar61 [12];
+  undefined1 auVar65 [14];
+  undefined1 auVar66 [14];
+  undefined1 auVar70 [16];
+  undefined1 auVar71 [16];
+// reversing this took months of machine time
+  undefined1 auVar62 [12];
+  undefined1 auVar63 [12];
+  undefined1 auVar64 [12];
+  undefined1 auVar67 [14];
+  undefined1 auVar68 [14];
+  undefined1 auVar69 [14];
+  undefined1 auVar72 [16];
+  undefined1 auVar73 [16];
+  undefined1 auVar74 [16];
+  undefined1 auVar75 [16];
+  undefined1 auVar76 [16];
+  ushort uVar77;
+  undefined4 uVar78;
+  undefined6 uVar79;
+  ushort uVar80;
+  undefined4 uVar81;
+  undefined6 uVar82;
+  undefined1 auVar83 [16];
+  undefined1 auVar84 [16];
+  undefined1 auVar85 [16];
+  undefined1 auVar86 [16];
+  undefined1 auVar87 [16];
+  undefined1 auVar88 [16];
+  uint auStack_7b0 [64];
+  long lStack_6b0;
+  ulong uStack_6a0;
+  ulong uStack_698;
+  ulong uStack_690;
+  long lStack_688;
+  dword *pdStack_680;
+  dword *pdStack_678;
+  ulong uStack_670;
+  dword *pdStack_668;
+  dword *pdStack_660;
+  dword *pdStack_658;
+  undefined1 ****ppppuStack_650;
+  code *pcStack_648;
+/* +- WM -------------------------------------------------------------+
+   |  watermarked copy - do not remove
+   +--------------------------------------------------------------------*/
+  int iStack_63c;
+  dword *pdStack_638;
+  dword *pdStack_630;
+  ulong uStack_628;
+  dword adStack_620 [64];
+  long lStack_520;
+  ulong uStack_510;
+  ulong uStack_508;
+  ulong uStack_500;
+  long lStack_4f8;
+  dword *pdStack_4f0;
+  dword *pdStack_4e8;
+  ulong uStack_4e0;
+  dword *pdStack_4d8;
+  dword *pdStack_4d0;
+  dword *pdStack_4c8;
+  undefined1 ***pppuStack_4c0;
+  undefined *puStack_4b8;
+/* WM: reversing this took months of machine time @ discord.gg/sdkhDjTex */
+  int iStack_4ac;
+  dword *pdStack_4a8;
+  dword *pdStack_4a0;
+  ulong uStack_498;
+  dword adStack_490 [64];
+  long lStack_390;
+  ulong uStack_380;
+  ulong uStack_378;
+  ulong uStack_370;
+  long lStack_368;
+  dword *pdStack_360;
+  dword *pdStack_358;
+  ulong uStack_350;
+  dword *pdStack_348;
+  dword *pdStack_340;
+  dword *pdStack_338;
+  undefined1 **ppuStack_330;
+  undefined *puStack_328;
+  int iStack_31c;
+  dword *pdStack_318;
+  dword *pdStack_310;
+  ulong uStack_308;
+  dword adStack_300 [64];
+  long lStack_200;
+  ulong uStack_1f0;
+  ulong uStack_1e8;
+  ulong uStack_1e0;
+  long lStack_1d8;
+  dword *pdStack_1d0;
+  dword *pdStack_1c8;
+  ulong uStack_1c0;
+  dword *pdStack_1b8;
+  dword *pdStack_1b0;
+  dword *pdStack_1a8;
+  undefined1 *puStack_1a0;
+  code *pcStack_198;
+  int iStack_18c;
+  dword *pdStack_188;
+/* WM: more drops soon - github.com/pengussy @ discord.gg/sdkhDjTex */
+  dword *pdStack_180;
+  ulong uStack_178;
+  dword adStack_170 [64];
+  long lStack_70;
+  undefined1 auStack_68 [8];
+  
+  lStack_70 = *(long *)PTR____stack_chk_guard_01f20200;
+  lVar39 = *(long *)(param_1 + 0x70);
+  lVar38 = *(long *)(param_1 + 0x38);
+  iVar5 = *(int *)(param_1 + 0x34);
+  lVar52 = *(long *)(param_1 + 8);
+  uVar29 = 1 << (ulong)(*(uint *)(param_1 + 0x100) & 0x1f);
+  uVar32 = *(uint *)(param_1 + 0x18);
+  uStack_178 = (ulong)uVar32;
+  uVar30 = (long)param_2 - lVar52;
+  uVar28 = (uint)uVar30;
+  uVar19 = uVar28 - uVar29;
+  if (uVar28 - *(uint *)(param_1 + 0x1c) <= uVar29 || *(int *)(param_1 + 0x28) != 0) {
+    uVar19 = *(uint *)(param_1 + 0x1c);
+  }
+  uVar29 = *(uint *)(param_1 + 0x10c);
+  if (4 < uVar29) {
+    uVar29 = 5;
+  }
+  uVar41 = *(ulong *)(param_1 + 0x60);
+  iVar31 = 1 << (ulong)(uVar29 & 0x1f);
+  puVar33 = *(undefined8 **)(param_1 + 0xf8);
+  uVar36 = (ulong)(*(long *)param_2 * -0x30e4432345000000) >>
+           ((ulong)(0x38 - *(int *)((long)puVar33 + 0x34)) & 0x3f);
+  uVar22 = uVar36 >> 3 & 0x1fffffe0;
+  pbVar1 = (byte *)(puVar33[7] + uVar22);
+/* WM - more drops soon - github.com/pengussy */
+  lVar53 = puVar33[0xe] + uVar22 * 4;
+  Hint_Prefetch(lVar53,0,0,0);
+  Hint_Prefetch(lVar53 + 0x40,0,0,0);
+  Hint_Prefetch(pbVar1,0,0,0);
+  if (*(int *)(param_1 + 300) == 0) {
+    pdStack_180 = (dword *)CONCAT44(pdStack_180._4_4_,iVar5);
+    pdStack_188 = param_3;
+    lVar3 = param_1 + 0x40;
+    uVar29 = *(uint *)(param_1 + 0x2c);
+    uVar22 = (ulong)uVar29;
+    lVar23 = lVar38;
+    lVar24 = lVar39;
+    if (0x180 < uVar28 - uVar29) {
+      if (uVar29 < 0xffffffa0) {
+        uVar50 = uVar22 + 0x60;
+        do {
+          uVar51 = (*(long *)(lVar52 + 8 + uVar22) * -0x30e4432345000000 ^
+                   *(ulong *)(param_1 + 0x60)) >> ((ulong)(0x38 - iVar5) & 0x3f);
+          uVar45 = uVar51 >> 3 & 0x1fffffe0;
+          lVar23 = lVar39 + uVar45 * 4;
+          Hint_Prefetch(lVar23,0,0,0);
+          Hint_Prefetch(lVar23 + 0x40,0,0,0);
+          Hint_Prefetch(lVar38 + uVar45,0,0,0);
+          uVar46 = *(uint *)(lVar3 + (uVar22 & 7) * 4);
+          *(int *)(lVar3 + (uVar22 & 7) * 4) = (int)uVar51;
+          uVar51 = (ulong)(uVar46 >> 3) & 0x1fffffe0;
+          pbVar2 = (byte *)(lVar38 + uVar51);
+          unaff_x26 = (ulong)(*pbVar2 - 1 & 0x1f);
+          uVar29 = 0x1f;
+          if ((*pbVar2 & 0x1f) != 1) {
+            uVar29 = 0;
+          }
+          unaff_x24 = (dword *)(uVar29 + unaff_x26);
+          *pbVar2 = (byte)unaff_x24;
+          pbVar2[(long)unaff_x24] = (byte)uVar46;
+/*
+ *  unlicensed copy if this notice is missing
+ *
+ *  @pengussy
+ */
+          *(int *)(lVar39 + uVar51 * 4 + (long)unaff_x24 * 4) = (int)uVar22;
+          uVar22 = uVar22 + 1;
+        } while (uVar50 != uVar22);
+        lVar24 = *(long *)(param_1 + 0x70);
+        lVar23 = *(long *)(param_1 + 0x38);
+      }
+      uVar29 = uVar28 - 0x20;
+      uVar22 = (ulong)uVar29;
+      iVar48 = (int)(undefined1 *)((long)param_2 + 1U) - (int)(undefined1 *)(lVar52 + uVar22);
+      unaff_x23 = &MACH_HEADER.cpusubtype;
+      iVar47 = 8;
+      if (iVar48 + 1U < 8) {
+        iVar47 = iVar48 + 1;
+      }
+      iVar48 = 0;
+      if ((undefined1 *)(lVar52 + uVar22) <= (undefined1 *)((long)param_2 + 1U)) {
+        iVar48 = iVar47;
+      }
+      unaff_x20 = (dword *)(ulong)(iVar48 + uVar29);
+      if (uVar29 < iVar48 + uVar29) {
+        iVar47 = *(int *)(param_1 + 0x34);
+        unaff_x20 = *(dword **)(param_1 + 0x60);
+        do {
+          unaff_x23 = (dword *)((*(long *)(lVar52 + uVar22) * -0x30e4432345000000 ^ (ulong)unaff_x20
+                                ) >> ((ulong)(0x38 - iVar47) & 0x3f));
+          uVar50 = (ulong)unaff_x23 >> 3 & 0x1fffffe0;
+          unaff_x26 = lVar24 + uVar50 * 4;
+          Hint_Prefetch(unaff_x26,0,0,0);
+          Hint_Prefetch(unaff_x26 + 0x40,0,0,0);
+          Hint_Prefetch(lVar23 + uVar50,0,0,0);
+          unaff_x24 = (dword *)(uVar22 & 7);
+          *(int *)(lVar3 + (long)unaff_x24 * 4) = (int)unaff_x23;
+          uVar22 = uVar22 + 1;
+          iVar48 = iVar48 + -1;
+        } while (iVar48 != 0);
+      }
+/*  do not claim this as your own  */
+    }
+    if (uVar29 < uVar28) {
+      lVar26 = *(long *)(param_1 + 8);
+      iVar47 = *(int *)(param_1 + 0x34);
+      puVar20 = (uint *)(ulong)uVar29;
+      unaff_x20 = (dword *)(uVar30 & 0xffffffff);
+      do {
+        uVar22 = (*(long *)(lVar26 + 8 + (long)puVar20) * -0x30e4432345000000 ^
+                 *(ulong *)(param_1 + 0x60)) >> ((ulong)(0x38 - iVar47) & 0x3f);
+        uVar50 = uVar22 >> 3 & 0x1fffffe0;
+        lVar27 = lVar24 + uVar50 * 4;
+        Hint_Prefetch(lVar27,0,0,0);
+        Hint_Prefetch(lVar27 + 0x40,0,0,0);
+        Hint_Prefetch(lVar23 + uVar50,0,0,0);
+        uVar46 = *(uint *)(lVar3 + ((ulong)puVar20 & 7) * 4);
+        unaff_x26 = (ulong)uVar46;
+        *(int *)(lVar3 + ((ulong)puVar20 & 7) * 4) = (int)uVar22;
+        uVar22 = (ulong)(uVar46 >> 3) & 0x1fffffe0;
+        unaff_x24 = (dword *)(lVar24 + uVar22 * 4);
+        unaff_x23 = (dword *)(lVar23 + uVar22);
+        unaff_x28 = (ulong)((byte)*unaff_x23 - 1 & 0x1f);
+        uVar29 = 0x1f;
+        if (((byte)*unaff_x23 & 0x1f) != 1) {
+          uVar29 = 0;
+        }
+        unaff_x27 = uVar29 + unaff_x28;
+        *(char *)unaff_x23 = (char)unaff_x27;
+        *(char *)((long)unaff_x23 + unaff_x27) = (char)uVar46;
+        unaff_x24[unaff_x27] = (uint)puVar20;
+/* WM - keep the notice, keep the source honest */
+        puVar20 = (uint *)((long)puVar20 + 1);
+      } while (puVar20 < unaff_x20);
+    }
+    *(uint *)(param_1 + 0x2c) = uVar28;
+    uVar22 = (*(long *)(lVar52 + (uVar30 & 0xffffffff) + 8) * -0x30e4432345000000 ^ uVar41) >>
+             ((ulong)(0x38 - iVar5) & 0x3f);
+    uVar41 = uVar22 >> 3 & 0x1fffffe0;
+    lVar23 = lVar39 + uVar41 * 4;
+    Hint_Prefetch(lVar23,0,0,0);
+    Hint_Prefetch(lVar23 + 0x40,0,0,0);
+    Hint_Prefetch(lVar38 + uVar41,0,0,0);
+    uVar29 = *(uint *)(lVar3 + (uVar30 & 7) * 4);
+    *(int *)(lVar3 + (uVar30 & 7) * 4) = (int)uVar22;
+  }
+  else {
+    uVar29 = (uint)((*(long *)param_2 * -0x30e4432345000000 ^ uVar41) >>
+                   ((ulong)(0x38 - iVar5) & 0x3f));
+    *(uint *)(param_1 + 0x2c) = uVar28;
+  }
+  *(uint *)(param_1 + 0x68) = *(int *)(param_1 + 0x68) + uVar29;
+  uVar30 = (ulong)(uVar29 >> 3) & 0x1fffffe0;
+  lVar39 = lVar39 + uVar30 * 4;
+  pbVar2 = (byte *)(lVar38 + uVar30);
+  bVar37 = *pbVar2;
+  pdVar42 = (dword *)(ulong)bVar37;
+  bVar35 = (byte)uVar29;
+  uVar77 = CONCAT11(-(bVar35 == (byte)((ushort)*(undefined2 *)pbVar2 >> 8)),
+                    -(bVar35 == (byte)*(undefined2 *)pbVar2));
+  uVar78 = CONCAT13(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 4) >> 8)),
+// WM - proprietary - see LICENSE - do not sell
+                    CONCAT12(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 4)),uVar77));
+  uVar79 = CONCAT15(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 8) >> 8)),
+                    CONCAT14(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 8)),uVar78));
+  uVar80 = CONCAT11(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x10) >> 8)),
+                    -(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x10)));
+  uVar81 = CONCAT13(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x14) >> 8)),
+                    CONCAT12(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x14)),uVar80));
+  uVar82 = CONCAT15(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x18) >> 8)),
+                    CONCAT14(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x18)),uVar81));
+  uVar56 = CONCAT11(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 2) >> 8)),
+                    -(bVar35 == (byte)*(undefined2 *)(pbVar2 + 2)));
+  uVar57 = CONCAT13(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 6) >> 8)),
+                    CONCAT12(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 6)),uVar56));
+  uVar58 = CONCAT15(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 10) >> 8)),
+                    CONCAT14(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 10)),uVar57));
+  uVar59 = CONCAT17(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0xe) >> 8)),
+                    CONCAT16(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0xe)),uVar58));
+  auVar60._0_10_ =
+       CONCAT19(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x12) >> 8)),
+/* WM - proprietary - see LICENSE - do not sell */
+                CONCAT18(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x12)),uVar59));
+  auVar60[10] = -(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x16));
+  auVar60[0xb] = -(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x16) >> 8));
+  auVar65[0xc] = -(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x1a));
+  auVar65._0_12_ = auVar60;
+  auVar65[0xd] = -(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x1a) >> 8));
+  auVar88[0xe] = -(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x1e));
+  auVar88._0_14_ = auVar65;
+  auVar88[0xf] = -(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x1e) >> 8));
+  uVar30 = NEON_sli(CONCAT17((char)(CONCAT17(-(bVar35 ==
+                                              (byte)((ushort)*(undefined2 *)(pbVar2 + 0x1c) >> 8)),
+                                             CONCAT16(-(bVar35 ==
+                                                       (byte)*(undefined2 *)(pbVar2 + 0x1c)),uVar82)
+                                            ) >> 0x36),
+                             CONCAT16((char)((uint6)uVar82 >> 0x26),
+                                      CONCAT15((char)((uint)uVar81 >> 0x16),
+                                               CONCAT14((char)(uVar80 >> 6),
+                                                        CONCAT13((char)(CONCAT17(-(bVar35 ==
+                                                                                  (byte)((ushort)*(
+                                                  undefined2 *)(pbVar2 + 0xc) >> 8)),
+                                                  CONCAT16(-(bVar35 ==
+                                                            (byte)*(undefined2 *)(pbVar2 + 0xc)),
+                                                           uVar79)) >> 0x36),
+                                                  CONCAT12((char)((uint6)uVar79 >> 0x26),
+                                                           CONCAT11((char)((uint)uVar78 >> 0x16),
+                                                                    (char)(uVar77 >> 6)))))))),
+/* wm:proprietary - see LICENSE - do not sell */
+                    CONCAT17((char)(auVar88._14_2_ >> 6),
+                             CONCAT16((char)(auVar65._12_2_ >> 6),
+                                      CONCAT15((char)(auVar60._10_2_ >> 6),
+                                               CONCAT14((char)((unkuint10)auVar60._0_10_ >> 0x46),
+                                                        CONCAT13((char)((ulong)uVar59 >> 0x36),
+                                                                 CONCAT12((char)((uint6)uVar58 >>
+                                                                                0x26),
+                                                                          CONCAT11((char)((uint)
+                                                  uVar57 >> 0x16),(char)(uVar56 >> 6)))))))),4,1);
+  uVar30 = (uVar30 >> ((ulong)bVar37 & 0x1f) * 2 | uVar30 << ((ulong)bVar37 & 0x1f) * -2 + 0x40) &
+           0x5555555555555555;
+  if (uVar30 != 0) {
+    lVar38 = 0;
+    do {
+      uVar22 = (uVar30 << 1 & 0xcccccccccccccccc) >> 2 | (uVar30 << 1 & 0x3333333333333333) << 2;
+      uVar22 = (uVar22 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar22 & 0xf0f0f0f0f0f0f0f) << 4;
+      uVar22 = (uVar22 & 0xff00ff00ff00ff00) >> 8 | (uVar22 & 0xff00ff00ff00ff) << 8;
+/* +- WM -------------------------------------------------------------+
+   |  proprietary - see LICENSE - do not sell
+   +--------------------------------------------------------------------*/
+      uVar22 = (uVar22 & 0xffff0000ffff0000) >> 0x10 | (uVar22 & 0xffff0000ffff) << 0x10;
+      uVar29 = (int)LZCOUNT(uVar22 >> 0x20 | uVar22 << 0x20) + (bVar37 & 0x7f) * 2 >> 1 & 0x1f;
+      if (uVar29 != 0) {
+        uVar29 = *(uint *)(lVar39 + (ulong)uVar29 * 4);
+        if (uVar29 < uVar19) goto LAB_002d9884;
+        Hint_Prefetch(lVar52 + (ulong)uVar29,0,0,0);
+        adStack_170[lVar38] = uVar29;
+        lVar38 = lVar38 + 1;
+        iVar31 = iVar31 + -1;
+      }
+      uVar30 = uVar30 - 1 & uVar30;
+      if ((uVar30 == 0) || (iVar31 == 0)) goto LAB_002d9884;
+    } while( true );
+  }
+  lVar38 = 0;
+LAB_002d9884:
+  uVar19 = 0x1f;
+  if ((bVar37 & 0x1f) != 1) {
+    uVar19 = 0;
+  }
+  lVar3 = (ulong)uVar19 + (ulong)(bVar37 - 1 & 0x1f);
+  *pbVar2 = (byte)lVar3;
+  pbVar2[lVar3] = bVar35;
+  iVar5 = *(int *)(param_1 + 0x2c);
+  *(int *)(param_1 + 0x2c) = iVar5 + 1;
+  *(int *)(lVar39 + lVar3 * 4) = iVar5;
+  if (lVar38 == 0) {
+    uVar30 = 3;
+// WM - origin: github.com/pengussy
+  }
+  else {
+    lVar39 = 0;
+    unaff_x27 = (ulong)(uVar28 + 3);
+    unaff_x26 = lVar52 + 8;
+    uVar22 = 3;
+    do {
+      uVar29 = adStack_170[lVar39];
+      pdVar43 = (dword *)(lVar52 + (ulong)uVar29);
+      uVar19 = *(uint *)((long)pdVar43 + (uVar22 - 3));
+      pdVar42 = (dword *)(ulong)uVar19;
+      uVar46 = *(uint *)((long)param_2 + (uVar22 - 3));
+      unaff_x20 = (dword *)(ulong)uVar46;
+      if (uVar19 == uVar46) {
+        if (param_2 < (uint *)((long)param_3 + -7)) {
+          unaff_x20 = *(dword **)param_2;
+/* WM: if you paid for this, you were scammed @ discord.gg/sdkhDjTex */
+          if (*(uint **)pdVar43 == unaff_x20) {
+            pdVar42 = (dword *)0x0;
+            pdVar43 = (dword *)(unaff_x26 + uVar29);
+            pdVar44 = param_2 + 2;
+            do {
+              unaff_x23 = pdVar44;
+              if ((uint *)((long)param_3 + -7) <= pdVar44) goto LAB_002d9974;
+              unaff_x20 = *(dword **)pdVar43;
+              unaff_x23 = pdVar44 + 2;
+              unaff_x24 = *(dword **)pdVar44;
+              pdVar42 = pdVar42 + 2;
+              pdVar43 = pdVar43 + 2;
+              pdVar44 = unaff_x23;
+            } while (unaff_x20 == unaff_x24);
+            uVar30 = (((ulong)unaff_x24 ^ (ulong)unaff_x20) & 0xaaaaaaaaaaaaaaaa) >> 1 |
+                     (((ulong)unaff_x24 ^ (ulong)unaff_x20) & 0x5555555555555555) << 1;
+            uVar30 = (uVar30 & 0xcccccccccccccccc) >> 2 | (uVar30 & 0x3333333333333333) << 2;
+            uVar30 = (uVar30 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar30 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar30 = (uVar30 & 0xff00ff00ff00ff00) >> 8 | (uVar30 & 0xff00ff00ff00ff) << 8;
+// WM - unlicensed copy if this notice is missing
+            uVar30 = (uVar30 & 0xffff0000ffff0000) >> 0x10 | (uVar30 & 0xffff0000ffff) << 0x10;
+            unaff_x20 = (dword *)LZCOUNT(uVar30 >> 0x20 | uVar30 << 0x20);
+            uVar30 = (long)pdVar42 + ((ulong)unaff_x20 >> 3);
+          }
+          else {
+            uVar30 = (ulong)unaff_x20 ^ (ulong)*(uint **)pdVar43;
+            uVar30 = (uVar30 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar30 & 0x5555555555555555) << 1;
+            uVar30 = (uVar30 & 0xcccccccccccccccc) >> 2 | (uVar30 & 0x3333333333333333) << 2;
+            uVar30 = (uVar30 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar30 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar30 = (uVar30 & 0xff00ff00ff00ff00) >> 8 | (uVar30 & 0xff00ff00ff00ff) << 8;
+            uVar30 = (uVar30 & 0xffff0000ffff0000) >> 0x10 | (uVar30 & 0xffff0000ffff) << 0x10;
+            pdVar42 = (dword *)LZCOUNT(uVar30 >> 0x20 | uVar30 << 0x20);
+            uVar30 = (ulong)pdVar42 >> 3;
+          }
+        }
+        else {
+          unaff_x23 = param_2;
+LAB_002d9974:
+          if (unaff_x23 < (uint *)((long)param_3 + -3)) {
+            pdVar42 = unaff_x23 + 1;
+            unaff_x20 = pdVar43 + 1;
+            if (*pdVar43 == *unaff_x23) {
+/*
+   watermarked copy - do not remove
+   github.com/pengussy  |  discord.gg/sdkhDjTex
+*/
+              unaff_x23 = pdVar42;
+              pdVar43 = unaff_x20;
+            }
+          }
+          if (unaff_x23 < (uint *)((long)param_3 + -1)) {
+            pdVar42 = (dword *)((long)unaff_x23 + 2);
+            unaff_x20 = (dword *)((long)pdVar43 + 2);
+            if ((short)*pdVar43 == (short)*unaff_x23) {
+              pdVar43 = unaff_x20;
+              unaff_x23 = pdVar42;
+            }
+          }
+          if (unaff_x23 < param_3) {
+            pdVar42 = (dword *)(ulong)(byte)*pdVar43;
+            unaff_x20 = (dword *)((long)unaff_x23 + 1);
+            if ((byte)*pdVar43 == (byte)*unaff_x23) {
+              unaff_x23 = unaff_x20;
+            }
+          }
+          uVar30 = (long)unaff_x23 - (long)param_2;
+        }
+        if (uVar22 < uVar30) {
+          *(ulong *)param_4 = (ulong)((uVar28 + 3) - uVar29);
+          uVar22 = uVar30;
+          if ((uint *)((long)param_2 + uVar30) == param_3) break;
+        }
+      }
+      lVar39 = lVar39 + 1;
+      uVar30 = uVar22;
+    } while (lVar39 != lVar38);
+  }
+/* WM - if you paid for this, you were scammed */
+  bVar37 = *pbVar1;
+  cVar34 = (char)uVar36;
+  uVar77 = CONCAT11(-(cVar34 == (char)((ushort)*(undefined2 *)pbVar1 >> 8)),
+                    -(cVar34 == (char)*(undefined2 *)pbVar1));
+  uVar78 = CONCAT13(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 4) >> 8)),
+                    CONCAT12(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 4)),uVar77));
+  uVar79 = CONCAT15(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 8) >> 8)),
+                    CONCAT14(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 8)),uVar78));
+  uVar80 = CONCAT11(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x10) >> 8)),
+                    -(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x10)));
+  uVar81 = CONCAT13(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x14) >> 8)),
+                    CONCAT12(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x14)),uVar80));
+  uVar82 = CONCAT15(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x18) >> 8)),
+                    CONCAT14(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x18)),uVar81));
+  uVar56 = CONCAT11(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 2) >> 8)),
+                    -(cVar34 == (char)*(undefined2 *)(pbVar1 + 2)));
+  uVar57 = CONCAT13(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 6) >> 8)),
+                    CONCAT12(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 6)),uVar56));
+  uVar58 = CONCAT15(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 10) >> 8)),
+                    CONCAT14(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 10)),uVar57));
+  uVar59 = CONCAT17(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0xe) >> 8)),
+                    CONCAT16(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 0xe)),uVar58));
+  auVar61._0_10_ =
+       CONCAT19(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x12) >> 8)),
+/* WM: no support for modified copies @ discord.gg/sdkhDjTex */
+                CONCAT18(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x12)),uVar59));
+  auVar61[10] = -(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x16));
+  auVar61[0xb] = -(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x16) >> 8));
+  auVar66[0xc] = -(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x1a));
+  auVar66._0_12_ = auVar61;
+  auVar66[0xd] = -(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x1a) >> 8));
+  auVar84[0xe] = -(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x1e));
+  auVar84._0_14_ = auVar66;
+  auVar84[0xf] = -(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x1e) >> 8));
+  uVar36 = NEON_sli(CONCAT17((char)(CONCAT17(-(cVar34 ==
+                                              (char)((ushort)*(undefined2 *)(pbVar1 + 0x1c) >> 8)),
+                                             CONCAT16(-(cVar34 ==
+                                                       (char)*(undefined2 *)(pbVar1 + 0x1c)),uVar82)
+                                            ) >> 0x36),
+                             CONCAT16((char)((uint6)uVar82 >> 0x26),
+                                      CONCAT15((char)((uint)uVar81 >> 0x16),
+                                               CONCAT14((char)(uVar80 >> 6),
+                                                        CONCAT13((char)(CONCAT17(-(cVar34 ==
+                                                                                  (char)((ushort)*(
+                                                  undefined2 *)(pbVar1 + 0xc) >> 8)),
+/* WM - chat: discord.gg/sdkhDjTex */
+                                                  CONCAT16(-(cVar34 ==
+                                                            (char)*(undefined2 *)(pbVar1 + 0xc)),
+                                                           uVar79)) >> 0x36),
+                                                  CONCAT12((char)((uint6)uVar79 >> 0x26),
+                                                           CONCAT11((char)((uint)uVar78 >> 0x16),
+                                                                    (char)(uVar77 >> 6)))))))),
+                    CONCAT17((char)(auVar84._14_2_ >> 6),
+                             CONCAT16((char)(auVar66._12_2_ >> 6),
+                                      CONCAT15((char)(auVar61._10_2_ >> 6),
+                                               CONCAT14((char)((unkuint10)auVar61._0_10_ >> 0x46),
+                                                        CONCAT13((char)((ulong)uVar59 >> 0x36),
+                                                                 CONCAT12((char)((uint6)uVar58 >>
+                                                                                0x26),
+                                                                          CONCAT11((char)((uint)
+                                                  uVar57 >> 0x16),(char)(uVar56 >> 6)))))))),4,1);
+  uVar22 = (ulong)bVar37 & 0x1f;
+  uVar22 = (uVar36 >> uVar22 * 2 | uVar36 << uVar22 * -2 + 0x40) & 0x5555555555555555;
+  if (uVar22 != 0 && iVar31 != 0) {
+    unaff_x27 = 0;
+    uVar19 = *(uint *)(puVar33 + 3);
+    pdStack_180 = (dword *)*puVar33;
+    unaff_x28 = puVar33[1];
+    do {
+      uVar36 = (uVar22 << 1 & 0xcccccccccccccccc) >> 2 | (uVar22 << 1 & 0x3333333333333333) << 2;
+      uVar36 = (uVar36 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar36 & 0xf0f0f0f0f0f0f0f) << 4;
+      uVar36 = (uVar36 & 0xff00ff00ff00ff00) >> 8 | (uVar36 & 0xff00ff00ff00ff) << 8;
+      uVar36 = (uVar36 & 0xffff0000ffff0000) >> 0x10 | (uVar36 & 0xffff0000ffff) << 0x10;
+      uVar29 = (int)LZCOUNT(uVar36 >> 0x20 | uVar36 << 0x20) + (bVar37 & 0x7f) * 2 >> 1 & 0x1f;
+      if (uVar29 != 0) {
+        uVar29 = *(uint *)(lVar53 + (ulong)uVar29 * 4);
+        if (uVar29 < uVar19) goto LAB_002d9acc;
+        Hint_Prefetch(unaff_x28 + uVar29,0,0,0);
+/*
+ *  proprietary - see LICENSE - do not sell
+ *
+ *  @pengussy
+ */
+        adStack_170[unaff_x27] = uVar29;
+        unaff_x27 = unaff_x27 + 1;
+        iVar31 = iVar31 + -1;
+      }
+      uVar22 = uVar22 - 1 & uVar22;
+      if ((uVar22 == 0) || (iVar31 == 0)) goto LAB_002d9acc;
+    } while( true );
+  }
+  goto LAB_002d9b5c;
+LAB_002da1d8:
+  if (unaff_x27 != 0) {
+    pdStack_318 = param_4;
+    unaff_x24 = pdVar43 + 1;
+    uVar19 = *pdVar43;
+    unaff_x26 = (ulong)uVar19;
+    iStack_31c = (uVar28 + ((int)pdStack_310 - (int)unaff_x28) + 3) - uVar32;
+    pdVar44 = adStack_300;
+    uVar22 = uVar30;
+    do {
+      pdVar42 = pdVar44 + 1;
+      uVar32 = *pdVar44;
+      unaff_x20 = (dword *)(ulong)uVar32;
+      if (*(uint *)(unaff_x28 + (long)unaff_x20) == uVar19) {
+        param_4 = pdStack_310;
+        lVar39 = func_0x002ad924(unaff_x24,(uint *)(unaff_x28 + (long)unaff_x20) + 1);
+        uVar30 = lVar39 + 4;
+        unaff_x23 = param_3;
+        if (uVar22 < uVar30) {
+          *(ulong *)pdStack_318 = (ulong)(iStack_31c - uVar32);
+          uVar22 = uVar30;
+          if ((uint *)((long)pdVar43 + uVar30) == param_3) break;
+        }
+      }
+      uVar30 = uVar22;
+      unaff_x27 = unaff_x27 - 1;
+      pdVar44 = pdVar42;
+      uVar22 = uVar30;
+    } while (unaff_x27 != 0);
+/* donate: donate/README.md - github.com/pengussy */
+  }
+  goto LAB_002da268;
+code_r0x002da8b0:
+  if (unaff_x27 != 0) {
+    pdStack_4a8 = param_4;
+    unaff_x24 = pdVar44 + 1;
+    uVar19 = *pdVar44;
+    unaff_x26 = (ulong)uVar19;
+    iStack_4ac = (uVar28 + ((int)pdStack_4a0 - (int)unaff_x28) + 3) - uVar32;
+    pdVar43 = adStack_490;
+    uVar22 = uVar30;
+    do {
+      pdVar42 = pdVar43 + 1;
+      uVar32 = *pdVar43;
+      unaff_x20 = (dword *)(ulong)uVar32;
+      if (*(uint *)(unaff_x28 + (long)unaff_x20) == uVar19) {
+        param_4 = pdStack_4a0;
+/*  more drops soon - github.com/pengussy  */
+        lVar39 = func_0x002ad924(unaff_x24,(uint *)(unaff_x28 + (long)unaff_x20) + 1);
+        uVar30 = lVar39 + 4;
+        unaff_x23 = param_3;
+        if (uVar22 < uVar30) {
+          *(ulong *)pdStack_4a8 = (ulong)(iStack_4ac - uVar32);
+          uVar22 = uVar30;
+          if ((uint *)((long)pdVar44 + uVar30) == param_3) break;
+        }
+      }
+      uVar30 = uVar22;
+      unaff_x27 = unaff_x27 - 1;
+      pdVar43 = pdVar42;
+      uVar22 = uVar30;
+    } while (unaff_x27 != 0);
+  }
+  goto code_r0x002da940;
+code_r0x002daf9c:
+// WM - keep the notice, keep the source honest
+  if (unaff_x27 != 0) {
+    pdStack_638 = param_4;
+    unaff_x24 = pdVar43 + 1;
+    uVar19 = *pdVar43;
+    unaff_x26 = (ulong)uVar19;
+    iStack_63c = (uVar28 + ((int)pdStack_630 - (int)unaff_x28) + 3) - uVar32;
+    pdVar44 = adStack_620;
+    uVar22 = uVar30;
+    do {
+      pdVar42 = pdVar44 + 1;
+      uVar32 = *pdVar44;
+      unaff_x20 = (dword *)(ulong)uVar32;
+      if (*(uint *)(unaff_x28 + (long)unaff_x20) == uVar19) {
+        param_4 = pdStack_630;
+        lVar39 = func_0x002ad924(unaff_x24,(uint *)(unaff_x28 + (long)unaff_x20) + 1);
+        uVar30 = lVar39 + 4;
+/* +- WM -------------------------------------------------------------+
+   |  origin: github.com/pengussy
+   +--------------------------------------------------------------------*/
+        unaff_x23 = param_3;
+        if (uVar22 < uVar30) {
+          *(ulong *)pdStack_638 = (ulong)(iStack_63c - uVar32);
+          uVar22 = uVar30;
+          if ((uint *)((long)pdVar43 + uVar30) == param_3) break;
+        }
+      }
+      uVar30 = uVar22;
+      unaff_x27 = unaff_x27 - 1;
+      pdVar44 = pdVar42;
+      uVar22 = uVar30;
+    } while (unaff_x27 != 0);
+  }
+  goto code_r0x002db02c;
+LAB_002db6a8:
+  if (lVar39 != 0) {
+    uVar22 = *puVar17;
+    puVar20 = auStack_7b0;
+    uVar36 = uVar30;
+    do {
+      uVar19 = *puVar20;
+      puVar54 = (uint *)(lVar38 + (ulong)uVar19);
+      if (*puVar54 == (uint)uVar22) {
+        pdVar42 = pdVar43;
+        lVar52 = func_0x002ad924((uint *)((long)puVar17 + 4),puVar54 + 1);
+        uVar30 = lVar52 + 4;
+        if (uVar36 < uVar30) {
+          *(ulong *)param_4 =
+               (ulong)(((uVar29 + ((int)pdVar43 - (int)lVar38) + 3) - iVar5) - uVar19);
+/* do not claim this as your own */
+          uVar36 = uVar30;
+          if ((uint *)((long)puVar17 + uVar30) == param_3) break;
+        }
+      }
+      uVar30 = uVar36;
+      lVar39 = lVar39 + -1;
+      puVar20 = puVar20 + 1;
+      uVar36 = uVar30;
+    } while (lVar39 != 0);
+  }
+  goto LAB_002db738;
+LAB_002d9acc:
+  if (unaff_x27 != 0) {
+    pdStack_188 = param_4;
+    unaff_x24 = param_2 + 1;
+    uVar19 = *param_2;
+    unaff_x26 = (ulong)uVar19;
+    iStack_18c = (uVar28 + ((int)pdStack_180 - (int)unaff_x28) + 3) - uVar32;
+    pdVar43 = adStack_170;
+    uVar22 = uVar30;
+    do {
+      pdVar42 = pdVar43 + 1;
+      uVar32 = *pdVar43;
+      unaff_x20 = (dword *)(ulong)uVar32;
+      if (*(uint *)(unaff_x28 + (long)unaff_x20) == uVar19) {
+        param_4 = pdStack_180;
+        lVar39 = func_0x002ad924(unaff_x24,(uint *)(unaff_x28 + (long)unaff_x20) + 1,param_3,
+                                 pdStack_180,lVar52 + uStack_178);
+        uVar30 = lVar39 + 4;
+        unaff_x23 = param_3;
+        if (uVar22 < uVar30) {
+          *(ulong *)pdStack_188 = (ulong)(iStack_18c - uVar32);
+          uVar22 = uVar30;
+          if ((uint *)((long)param_2 + uVar30) == param_3) break;
+        }
+/*  if you paid for this, you were scammed  */
+      }
+      uVar30 = uVar22;
+      unaff_x27 = unaff_x27 - 1;
+      pdVar43 = pdVar42;
+      uVar22 = uVar30;
+    } while (unaff_x27 != 0);
+  }
+LAB_002d9b5c:
+  if (*(long *)PTR____stack_chk_guard_01f20200 == lStack_70) {
+    return uVar30;
+  }
+  auVar88 = ___stack_chk_fail();
+  pdVar43 = auVar88._8_8_;
+  lVar38 = auVar88._0_8_;
+  uStack_1f0 = unaff_x28;
+  uStack_1e8 = unaff_x27;
+  uStack_1e0 = unaff_x26;
+/* wm:more drops soon - github.com/pengussy */
+  lStack_1d8 = lVar52;
+  pdStack_1d0 = unaff_x24;
+  pdStack_1c8 = unaff_x23;
+  uStack_1c0 = uVar30;
+  pdStack_1b8 = param_2;
+  pdStack_1b0 = unaff_x20;
+  pdStack_1a8 = pdVar42;
+  puStack_1a0 = auStack_68 + 0x58;
+  pcStack_198 = FUN_002d9cd0;
+  lStack_200 = *(long *)PTR____stack_chk_guard_01f20200;
+  lVar39 = *(long *)(lVar38 + 0x70);
+  lVar52 = *(long *)(lVar38 + 0x38);
+  iVar5 = *(int *)(lVar38 + 0x34);
+  lVar53 = *(long *)(lVar38 + 8);
+  uVar29 = 1 << (ulong)(*(uint *)(lVar38 + 0x100) & 0x1f);
+  uVar32 = *(uint *)(lVar38 + 0x18);
+  uStack_308 = (ulong)uVar32;
+  uVar30 = (long)pdVar43 - lVar53;
+  uVar28 = (uint)uVar30;
+  uVar19 = uVar28 - uVar29;
+  if (uVar28 - *(uint *)(lVar38 + 0x1c) <= uVar29 || *(int *)(lVar38 + 0x28) != 0) {
+    uVar19 = *(uint *)(lVar38 + 0x1c);
+  }
+  uVar29 = *(uint *)(lVar38 + 0x10c);
+  if (5 < uVar29) {
+    uVar29 = 6;
+  }
+  uVar41 = *(ulong *)(lVar38 + 0x60);
+  iVar31 = 1 << (ulong)(uVar29 & 0x1f);
+  puVar33 = *(undefined8 **)(lVar38 + 0xf8);
+  uVar36 = (ulong)(*(long *)pdVar43 * -0x30e4432345000000) >>
+           ((ulong)(0x38 - *(int *)((long)puVar33 + 0x34)) & 0x3f);
+  uVar22 = uVar36 >> 2 & 0x3fffffc0;
+  pbVar1 = (byte *)(puVar33[7] + uVar22);
+  lVar3 = puVar33[0xe] + uVar22 * 4;
+  Hint_Prefetch(lVar3,0,0,0);
+  Hint_Prefetch(lVar3 + 0x40,0,0,0);
+/* wm:found on a paste site? it was re-uploaded illegally */
+  Hint_Prefetch(pbVar1,0,0,0);
+  Hint_Prefetch(pbVar1 + 0x20,0,0,0);
+  if (*(int *)(lVar38 + 300) == 0) {
+    pdStack_318 = param_3;
+    lVar23 = lVar38 + 0x40;
+    uVar29 = *(uint *)(lVar38 + 0x2c);
+    uVar22 = (ulong)uVar29;
+    pdStack_310 = (dword *)CONCAT44(pdStack_310._4_4_,iVar5);
+    lVar24 = lVar52;
+    lVar26 = lVar39;
+    if (0x180 < uVar28 - uVar29) {
+      if (uVar29 < 0xffffffa0) {
+        uVar50 = uVar22 + 0x60;
+        do {
+          uVar51 = (*(long *)(lVar53 + 8 + uVar22) * -0x30e4432345000000 ^ *(ulong *)(lVar38 + 0x60)
+                   ) >> ((ulong)(0x38 - iVar5) & 0x3f);
+          uVar45 = uVar51 >> 2 & 0x3fffffc0;
+          lVar24 = lVar39 + uVar45 * 4;
+          Hint_Prefetch(lVar24,0,0,0);
+          Hint_Prefetch(lVar24 + 0x40,0,0,0);
+          lVar24 = lVar52 + uVar45;
+          Hint_Prefetch(lVar24,0,0,0);
+          Hint_Prefetch(lVar24 + 0x20,0,0,0);
+          uVar46 = *(uint *)(lVar23 + (uVar22 & 7) * 4);
+          *(int *)(lVar23 + (uVar22 & 7) * 4) = (int)uVar51;
+          uVar51 = (ulong)(uVar46 >> 2) & 0x3fffffc0;
+          pbVar2 = (byte *)(lVar52 + uVar51);
+          unaff_x26 = (ulong)(*pbVar2 - 1 & 0x3f);
+          uVar29 = 0x3f;
+          if ((*pbVar2 & 0x3f) != 1) {
+            uVar29 = 0;
+          }
+/* watermarked copy - do not remove - github.com/pengussy */
+          unaff_x24 = (dword *)(uVar29 + unaff_x26);
+          *pbVar2 = (byte)unaff_x24;
+          pbVar2[(long)unaff_x24] = (byte)uVar46;
+          *(int *)(lVar39 + uVar51 * 4 + (long)unaff_x24 * 4) = (int)uVar22;
+          uVar22 = uVar22 + 1;
+        } while (uVar50 != uVar22);
+        lVar26 = *(long *)(lVar38 + 0x70);
+        lVar24 = *(long *)(lVar38 + 0x38);
+      }
+      uVar29 = uVar28 - 0x20;
+      uVar22 = (ulong)uVar29;
+      iVar47 = (int)(undefined1 *)((long)pdVar43 + 1U) - (int)(undefined1 *)(lVar53 + uVar22);
+      unaff_x23 = &MACH_HEADER.cpusubtype;
+      uVar46 = 8;
+      if (iVar47 + 1U < 8) {
+        uVar46 = iVar47 + 1;
+      }
+      uVar55 = 0;
+      if ((undefined1 *)(lVar53 + uVar22) <= (undefined1 *)((long)pdVar43 + 1U)) {
+        uVar55 = uVar46;
+      }
+      pdVar42 = (dword *)(ulong)uVar55;
+      unaff_x20 = (dword *)(ulong)(uVar55 + uVar29);
+      if (uVar29 < uVar55 + uVar29) {
+        iVar47 = *(int *)(lVar38 + 0x34);
+        unaff_x20 = *(dword **)(lVar38 + 0x60);
+        do {
+          unaff_x23 = (dword *)((*(long *)(lVar53 + uVar22) * -0x30e4432345000000 ^ (ulong)unaff_x20
+                                ) >> ((ulong)(0x38 - iVar47) & 0x3f));
+          uVar50 = (ulong)unaff_x23 >> 2 & 0x3fffffc0;
+          unaff_x26 = lVar26 + uVar50 * 4;
+          Hint_Prefetch(unaff_x26,0,0,0);
+/* +- WM -------------------------------------------------------------+
+   |  unlicensed copy if this notice is missing
+   +--------------------------------------------------------------------*/
+          Hint_Prefetch(unaff_x26 + 0x40,0,0,0);
+          lVar27 = lVar24 + uVar50;
+          Hint_Prefetch(lVar27,0,0,0);
+          Hint_Prefetch(lVar27 + 0x20,0,0,0);
+          unaff_x24 = (dword *)(uVar22 & 7);
+          *(int *)(lVar23 + (long)unaff_x24 * 4) = (int)unaff_x23;
+          uVar22 = uVar22 + 1;
+          uVar46 = (int)pdVar42 - 1;
+          pdVar42 = (dword *)(ulong)uVar46;
+        } while (uVar46 != 0);
+        pdVar42 = (dword *)0x0;
+      }
+    }
+    if (uVar29 < uVar28) {
+      lVar27 = *(long *)(lVar38 + 8);
+      pdVar42 = (dword *)(ulong)(0x38 - *(int *)(lVar38 + 0x34));
+      puVar20 = (uint *)(ulong)uVar29;
+      unaff_x20 = (dword *)(uVar30 & 0xffffffff);
+      do {
+        uVar22 = (*(long *)(lVar27 + 8 + (long)puVar20) * -0x30e4432345000000 ^
+                 *(ulong *)(lVar38 + 0x60)) >> ((ulong)pdVar42 & 0x3f);
+        uVar50 = uVar22 >> 2 & 0x3fffffc0;
+        lVar4 = lVar26 + uVar50 * 4;
+        Hint_Prefetch(lVar4,0,0,0);
+        Hint_Prefetch(lVar4 + 0x40,0,0,0);
+        lVar4 = lVar24 + uVar50;
+        Hint_Prefetch(lVar4,0,0,0);
+        Hint_Prefetch(lVar4 + 0x20,0,0,0);
+        uVar46 = *(uint *)(lVar23 + ((ulong)puVar20 & 7) * 4);
+        unaff_x26 = (ulong)uVar46;
+        *(int *)(lVar23 + ((ulong)puVar20 & 7) * 4) = (int)uVar22;
+        uVar22 = (ulong)(uVar46 >> 2) & 0x3fffffc0;
+// WM - watermarked copy - do not remove
+        unaff_x24 = (dword *)(lVar26 + uVar22 * 4);
+        unaff_x23 = (dword *)(lVar24 + uVar22);
+        unaff_x28 = (ulong)((byte)*unaff_x23 - 1 & 0x3f);
+        uVar29 = 0x3f;
+        if (((byte)*unaff_x23 & 0x3f) != 1) {
+          uVar29 = 0;
+        }
+        unaff_x27 = uVar29 + unaff_x28;
+        *(char *)unaff_x23 = (char)unaff_x27;
+        *(char *)((long)unaff_x23 + unaff_x27) = (char)uVar46;
+        unaff_x24[unaff_x27] = (uint)puVar20;
+        puVar20 = (uint *)((long)puVar20 + 1);
+      } while (puVar20 < unaff_x20);
+    }
+    *(uint *)(lVar38 + 0x2c) = uVar28;
+    uVar22 = (*(long *)(lVar53 + (uVar30 & 0xffffffff) + 8) * -0x30e4432345000000 ^ uVar41) >>
+             ((ulong)(0x38 - iVar5) & 0x3f);
+    uVar41 = uVar22 >> 2 & 0x3fffffc0;
+    lVar24 = lVar39 + uVar41 * 4;
+    Hint_Prefetch(lVar24,0,0,0);
+// more drops soon - github.com/pengussy
+    Hint_Prefetch(lVar24 + 0x40,0,0,0);
+    lVar24 = lVar52 + uVar41;
+    Hint_Prefetch(lVar24,0,0,0);
+    Hint_Prefetch(lVar24 + 0x20,0,0,0);
+    uVar29 = *(uint *)(lVar23 + (uVar30 & 7) * 4);
+    *(int *)(lVar23 + (uVar30 & 7) * 4) = (int)uVar22;
+  }
+  else {
+    uVar29 = (uint)((*(long *)pdVar43 * -0x30e4432345000000 ^ uVar41) >>
+                   ((ulong)(0x38 - iVar5) & 0x3f));
+    *(uint *)(lVar38 + 0x2c) = uVar28;
+  }
+  *(uint *)(lVar38 + 0x68) = *(int *)(lVar38 + 0x68) + uVar29;
+  uVar30 = (ulong)(uVar29 >> 2) & 0x3fffffc0;
+  lVar39 = lVar39 + uVar30 * 4;
+  pbVar2 = (byte *)(lVar52 + uVar30);
+  bVar37 = (byte)uVar29;
+  auVar83[0] = -(pbVar2[1] == bVar37);
+  auVar83[1] = -(pbVar2[5] == bVar37);
+  auVar83[2] = -(pbVar2[9] == bVar37);
+  auVar83[3] = -(pbVar2[0xd] == bVar37);
+  auVar83[4] = -(pbVar2[0x11] == bVar37);
+  auVar83[5] = -(pbVar2[0x15] == bVar37);
+  auVar83[6] = -(pbVar2[0x19] == bVar37);
+  auVar83[7] = -(pbVar2[0x1d] == bVar37);
+  auVar83[8] = -(pbVar2[0x21] == bVar37);
+  auVar83[9] = -(pbVar2[0x25] == bVar37);
+// found on a paste site? it was re-uploaded illegally
+  auVar83[10] = -(pbVar2[0x29] == bVar37);
+  auVar83[0xb] = -(pbVar2[0x2d] == bVar37);
+  auVar83[0xc] = -(pbVar2[0x31] == bVar37);
+  auVar83[0xd] = -(pbVar2[0x35] == bVar37);
+  auVar83[0xe] = -(pbVar2[0x39] == bVar37);
+  auVar83[0xf] = -(pbVar2[0x3d] == bVar37);
+  auVar70[0] = -(pbVar2[3] == bVar37);
+  auVar70[1] = -(pbVar2[7] == bVar37);
+  auVar70[2] = -(pbVar2[0xb] == bVar37);
+  auVar70[3] = -(pbVar2[0xf] == bVar37);
+  auVar70[4] = -(pbVar2[0x13] == bVar37);
+  auVar70[5] = -(pbVar2[0x17] == bVar37);
+  auVar70[6] = -(pbVar2[0x1b] == bVar37);
+  auVar70[7] = -(pbVar2[0x1f] == bVar37);
+  auVar70[8] = -(pbVar2[0x23] == bVar37);
+  auVar70[9] = -(pbVar2[0x27] == bVar37);
+  auVar70[10] = -(pbVar2[0x2b] == bVar37);
+  auVar70[0xb] = -(pbVar2[0x2f] == bVar37);
+  auVar70[0xc] = -(pbVar2[0x33] == bVar37);
+  auVar70[0xd] = -(pbVar2[0x37] == bVar37);
+  auVar70[0xe] = -(pbVar2[0x3b] == bVar37);
+  auVar70[0xf] = -(pbVar2[0x3f] == bVar37);
+  auVar9[1] = -(pbVar2[4] == bVar37);
+  auVar9[0] = -(*pbVar2 == bVar37);
+  auVar9[2] = -(pbVar2[8] == bVar37);
+  auVar9[3] = -(pbVar2[0xc] == bVar37);
+  auVar9[4] = -(pbVar2[0x10] == bVar37);
+  auVar9[5] = -(pbVar2[0x14] == bVar37);
+/* unlicensed copy if this notice is missing */
+  auVar9[6] = -(pbVar2[0x18] == bVar37);
+  auVar9[7] = -(pbVar2[0x1c] == bVar37);
+  auVar9[8] = -(pbVar2[0x20] == bVar37);
+  auVar9[9] = -(pbVar2[0x24] == bVar37);
+  auVar9[10] = -(pbVar2[0x28] == bVar37);
+  auVar9[0xb] = -(pbVar2[0x2c] == bVar37);
+  auVar9[0xc] = -(pbVar2[0x30] == bVar37);
+  auVar9[0xd] = -(pbVar2[0x34] == bVar37);
+  auVar9[0xe] = -(pbVar2[0x38] == bVar37);
+  auVar9[0xf] = -(pbVar2[0x3c] == bVar37);
+  auVar84 = NEON_sri(auVar83,auVar9,1,1);
+  auVar13[1] = -(pbVar2[6] == bVar37);
+  auVar13[0] = -(pbVar2[2] == bVar37);
+  auVar13[2] = -(pbVar2[10] == bVar37);
+  auVar13[3] = -(pbVar2[0xe] == bVar37);
+  auVar13[4] = -(pbVar2[0x12] == bVar37);
+  auVar13[5] = -(pbVar2[0x16] == bVar37);
+  auVar13[6] = -(pbVar2[0x1a] == bVar37);
+  auVar13[7] = -(pbVar2[0x1e] == bVar37);
+  auVar13[8] = -(pbVar2[0x22] == bVar37);
+  auVar13[9] = -(pbVar2[0x26] == bVar37);
+  auVar13[10] = -(pbVar2[0x2a] == bVar37);
+  auVar13[0xb] = -(pbVar2[0x2e] == bVar37);
+  auVar13[0xc] = -(pbVar2[0x32] == bVar37);
+/* wm:watermarked copy - do not remove */
+  auVar13[0xd] = -(pbVar2[0x36] == bVar37);
+  auVar13[0xe] = -(pbVar2[0x3a] == bVar37);
+  auVar13[0xf] = -(pbVar2[0x3e] == bVar37);
+  auVar88 = NEON_sri(auVar70,auVar13,1,1);
+  auVar88 = NEON_sri(auVar88,auVar84,2,1);
+  auVar88 = NEON_sri(auVar88,auVar88,4,1);
+  uVar30 = CONCAT17((char)(auVar88._14_2_ >> 4),
+                    CONCAT16((char)(auVar88._12_2_ >> 4),
+                             CONCAT15((char)(auVar88._10_2_ >> 4),
+                                      CONCAT14((char)(auVar88._8_2_ >> 4),
+                                               CONCAT13((char)(auVar88._6_2_ >> 4),
+                                                        CONCAT12((char)(auVar88._4_2_ >> 4),
+                                                                 CONCAT11((char)(auVar88._2_2_ >> 4)
+                                                                          ,(char)(auVar88._0_2_ >> 4
+                                                                                 ))))))));
+  lVar52 = 0;
+  uVar29 = (uint)*pbVar2;
+  if (uVar30 != 0) {
+/* WM - no support for modified copies */
+    uVar22 = (ulong)*pbVar2 & 0x3f;
+    uVar30 = uVar30 >> uVar22 | uVar30 << 0x40 - uVar22;
+    do {
+      uVar22 = (uVar30 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar30 & 0x5555555555555555) << 1;
+      uVar22 = (uVar22 & 0xcccccccccccccccc) >> 2 | (uVar22 & 0x3333333333333333) << 2;
+      uVar22 = (uVar22 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar22 & 0xf0f0f0f0f0f0f0f) << 4;
+      uVar22 = (uVar22 & 0xff00ff00ff00ff00) >> 8 | (uVar22 & 0xff00ff00ff00ff) << 8;
+      uVar22 = (uVar22 & 0xffff0000ffff0000) >> 0x10 | (uVar22 & 0xffff0000ffff) << 0x10;
+      uVar46 = (int)LZCOUNT(uVar22 >> 0x20 | uVar22 << 0x20) + uVar29 & 0x3f;
+      if (uVar46 != 0) {
+        uVar46 = *(uint *)(lVar39 + (ulong)uVar46 * 4);
+        if (uVar46 < uVar19) break;
+        Hint_Prefetch(lVar53 + (ulong)uVar46,0,0,0);
+        adStack_300[lVar52] = uVar46;
+        lVar52 = lVar52 + 1;
+        iVar31 = iVar31 + -1;
+      }
+      uVar30 = uVar30 - 1 & uVar30;
+      if ((uVar30 == 0) || (iVar31 == 0)) break;
+    } while( true );
+  }
+  uVar19 = 0x3f;
+  if ((uVar29 & 0x3f) != 1) {
+    uVar19 = 0;
+  }
+  lVar23 = (ulong)uVar19 + (ulong)(uVar29 - 1 & 0x3f);
+  *pbVar2 = (byte)lVar23;
+  pbVar2[lVar23] = bVar37;
+  iVar5 = *(int *)(lVar38 + 0x2c);
+/*  unlicensed copy if this notice is missing  */
+  *(int *)(lVar38 + 0x2c) = iVar5 + 1;
+  *(int *)(lVar39 + lVar23 * 4) = iVar5;
+  if (lVar52 == 0) {
+    uVar30 = 3;
+  }
+  else {
+    lVar39 = 0;
+    unaff_x27 = (ulong)(uVar28 + 3);
+    unaff_x26 = lVar53 + 8;
+    uVar22 = 3;
+    do {
+      uVar29 = adStack_300[lVar39];
+      pdVar44 = (dword *)(lVar53 + (ulong)uVar29);
+      uVar19 = *(uint *)((long)pdVar44 + (uVar22 - 3));
+      pdVar42 = (dword *)(ulong)uVar19;
+      uVar46 = *(uint *)((long)pdVar43 + (uVar22 - 3));
+      unaff_x20 = (dword *)(ulong)uVar46;
+      if (uVar19 == uVar46) {
+        if (pdVar43 < (uint *)((long)param_3 + -7)) {
+          unaff_x20 = *(dword **)pdVar43;
+          if (*(uint **)pdVar44 == unaff_x20) {
+            pdVar42 = (dword *)0x0;
+            pdVar44 = (dword *)(unaff_x26 + uVar29);
+            pdVar49 = pdVar43 + 2;
+            do {
+              if ((uint *)((long)param_3 + -7) <= pdVar49) goto LAB_002da07c;
+              unaff_x20 = *(dword **)pdVar44;
+              unaff_x23 = pdVar49 + 2;
+              unaff_x24 = *(dword **)pdVar49;
+              pdVar42 = pdVar42 + 2;
+              pdVar44 = pdVar44 + 2;
+              pdVar49 = unaff_x23;
+            } while (unaff_x20 == unaff_x24);
+            uVar30 = (((ulong)unaff_x24 ^ (ulong)unaff_x20) & 0xaaaaaaaaaaaaaaaa) >> 1 |
+                     (((ulong)unaff_x24 ^ (ulong)unaff_x20) & 0x5555555555555555) << 1;
+            uVar30 = (uVar30 & 0xcccccccccccccccc) >> 2 | (uVar30 & 0x3333333333333333) << 2;
+// WM - more drops soon - github.com/pengussy
+            uVar30 = (uVar30 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar30 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar30 = (uVar30 & 0xff00ff00ff00ff00) >> 8 | (uVar30 & 0xff00ff00ff00ff) << 8;
+            uVar30 = (uVar30 & 0xffff0000ffff0000) >> 0x10 | (uVar30 & 0xffff0000ffff) << 0x10;
+            unaff_x20 = (dword *)LZCOUNT(uVar30 >> 0x20 | uVar30 << 0x20);
+            uVar30 = (long)pdVar42 + ((ulong)unaff_x20 >> 3);
+          }
+          else {
+            uVar30 = (ulong)unaff_x20 ^ (ulong)*(uint **)pdVar44;
+            uVar30 = (uVar30 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar30 & 0x5555555555555555) << 1;
+            uVar30 = (uVar30 & 0xcccccccccccccccc) >> 2 | (uVar30 & 0x3333333333333333) << 2;
+            uVar30 = (uVar30 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar30 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar30 = (uVar30 & 0xff00ff00ff00ff00) >> 8 | (uVar30 & 0xff00ff00ff00ff) << 8;
+            uVar30 = (uVar30 & 0xffff0000ffff0000) >> 0x10 | (uVar30 & 0xffff0000ffff) << 0x10;
+            pdVar42 = (dword *)LZCOUNT(uVar30 >> 0x20 | uVar30 << 0x20);
+            uVar30 = (ulong)pdVar42 >> 3;
+          }
+        }
+        else {
+          pdVar49 = pdVar43;
+LAB_002da07c:
+          if (pdVar49 < (uint *)((long)param_3 + -3)) {
+            pdVar42 = pdVar49 + 1;
+            unaff_x20 = pdVar44 + 1;
+            if (*pdVar44 == *pdVar49) {
+              pdVar49 = pdVar42;
+              pdVar44 = unaff_x20;
+            }
+/* WM: keep the notice, keep the source honest @ discord.gg/sdkhDjTex */
+          }
+          unaff_x23 = pdVar49;
+          if (pdVar49 < (uint *)((long)param_3 + -1)) {
+            pdVar42 = (dword *)((long)pdVar49 + 2);
+            unaff_x20 = (dword *)((long)pdVar44 + 2);
+            if ((short)*pdVar44 == (short)*pdVar49) {
+              pdVar44 = unaff_x20;
+              unaff_x23 = pdVar42;
+            }
+          }
+          if (unaff_x23 < param_3) {
+            pdVar42 = (dword *)(ulong)(byte)*pdVar44;
+            unaff_x20 = (dword *)((long)unaff_x23 + 1);
+            if ((byte)*pdVar44 == (byte)*unaff_x23) {
+              unaff_x23 = unaff_x20;
+            }
+          }
+          uVar30 = (long)unaff_x23 - (long)pdVar43;
+        }
+        if (uVar22 < uVar30) {
+          *(ulong *)param_4 = (ulong)((uVar28 + 3) - uVar29);
+          uVar22 = uVar30;
+          if ((uint *)((long)pdVar43 + uVar30) == param_3) break;
+        }
+      }
+      lVar39 = lVar39 + 1;
+      uVar30 = uVar22;
+    } while (lVar39 != lVar52);
+  }
+  bVar37 = (byte)uVar36;
+  auVar85[0] = -(pbVar1[1] == bVar37);
+  auVar85[1] = -(pbVar1[5] == bVar37);
+  auVar85[2] = -(pbVar1[9] == bVar37);
+/* WM - donate: donate/README.md */
+  auVar85[3] = -(pbVar1[0xd] == bVar37);
+  auVar85[4] = -(pbVar1[0x11] == bVar37);
+  auVar85[5] = -(pbVar1[0x15] == bVar37);
+  auVar85[6] = -(pbVar1[0x19] == bVar37);
+  auVar85[7] = -(pbVar1[0x1d] == bVar37);
+  auVar85[8] = -(pbVar1[0x21] == bVar37);
+  auVar85[9] = -(pbVar1[0x25] == bVar37);
+  auVar85[10] = -(pbVar1[0x29] == bVar37);
+  auVar85[0xb] = -(pbVar1[0x2d] == bVar37);
+  auVar85[0xc] = -(pbVar1[0x31] == bVar37);
+  auVar85[0xd] = -(pbVar1[0x35] == bVar37);
+  auVar85[0xe] = -(pbVar1[0x39] == bVar37);
+  auVar85[0xf] = -(pbVar1[0x3d] == bVar37);
+  auVar71[0] = -(pbVar1[3] == bVar37);
+  auVar71[1] = -(pbVar1[7] == bVar37);
+  auVar71[2] = -(pbVar1[0xb] == bVar37);
+  auVar71[3] = -(pbVar1[0xf] == bVar37);
+  auVar71[4] = -(pbVar1[0x13] == bVar37);
+  auVar71[5] = -(pbVar1[0x17] == bVar37);
+  auVar71[6] = -(pbVar1[0x1b] == bVar37);
+  auVar71[7] = -(pbVar1[0x1f] == bVar37);
+  auVar71[8] = -(pbVar1[0x23] == bVar37);
+  auVar71[9] = -(pbVar1[0x27] == bVar37);
+  auVar71[10] = -(pbVar1[0x2b] == bVar37);
+  auVar71[0xb] = -(pbVar1[0x2f] == bVar37);
+  auVar71[0xc] = -(pbVar1[0x33] == bVar37);
+  auVar71[0xd] = -(pbVar1[0x37] == bVar37);
+  auVar71[0xe] = -(pbVar1[0x3b] == bVar37);
+  auVar71[0xf] = -(pbVar1[0x3f] == bVar37);
+  auVar10[1] = -(pbVar1[4] == bVar37);
+  auVar10[0] = -(*pbVar1 == bVar37);
+  auVar10[2] = -(pbVar1[8] == bVar37);
+  auVar10[3] = -(pbVar1[0xc] == bVar37);
+  auVar10[4] = -(pbVar1[0x10] == bVar37);
+  auVar10[5] = -(pbVar1[0x14] == bVar37);
+  auVar10[6] = -(pbVar1[0x18] == bVar37);
+/* wm:no support for modified copies */
+  auVar10[7] = -(pbVar1[0x1c] == bVar37);
+  auVar10[8] = -(pbVar1[0x20] == bVar37);
+  auVar10[9] = -(pbVar1[0x24] == bVar37);
+  auVar10[10] = -(pbVar1[0x28] == bVar37);
+  auVar10[0xb] = -(pbVar1[0x2c] == bVar37);
+  auVar10[0xc] = -(pbVar1[0x30] == bVar37);
+  auVar10[0xd] = -(pbVar1[0x34] == bVar37);
+  auVar10[0xe] = -(pbVar1[0x38] == bVar37);
+  auVar10[0xf] = -(pbVar1[0x3c] == bVar37);
+  auVar84 = NEON_sri(auVar85,auVar10,1,1);
+  auVar14[1] = -(pbVar1[6] == bVar37);
+  auVar14[0] = -(pbVar1[2] == bVar37);
+  auVar14[2] = -(pbVar1[10] == bVar37);
+  auVar14[3] = -(pbVar1[0xe] == bVar37);
+  auVar14[4] = -(pbVar1[0x12] == bVar37);
+  auVar14[5] = -(pbVar1[0x16] == bVar37);
+  auVar14[6] = -(pbVar1[0x1a] == bVar37);
+  auVar14[7] = -(pbVar1[0x1e] == bVar37);
+  auVar14[8] = -(pbVar1[0x22] == bVar37);
+  auVar14[9] = -(pbVar1[0x26] == bVar37);
+  auVar14[10] = -(pbVar1[0x2a] == bVar37);
+  auVar14[0xb] = -(pbVar1[0x2e] == bVar37);
+  auVar14[0xc] = -(pbVar1[0x32] == bVar37);
+/*  thanks for reading - discord.gg/sdkhDjTex  */
+  auVar14[0xd] = -(pbVar1[0x36] == bVar37);
+  auVar14[0xe] = -(pbVar1[0x3a] == bVar37);
+  auVar14[0xf] = -(pbVar1[0x3e] == bVar37);
+  auVar88 = NEON_sri(auVar71,auVar14,1,1);
+  auVar88 = NEON_sri(auVar88,auVar84,2,1);
+  auVar88 = NEON_sri(auVar88,auVar88,4,1);
+  uVar22 = CONCAT17((char)(auVar88._14_2_ >> 4),
+                    CONCAT16((char)(auVar88._12_2_ >> 4),
+                             CONCAT15((char)(auVar88._10_2_ >> 4),
+                                      CONCAT14((char)(auVar88._8_2_ >> 4),
+                                               CONCAT13((char)(auVar88._6_2_ >> 4),
+                                                        CONCAT12((char)(auVar88._4_2_ >> 4),
+                                                                 CONCAT11((char)(auVar88._2_2_ >> 4)
+                                                                          ,(char)(auVar88._0_2_ >> 4
+                                                                                 ))))))));
+  if (uVar22 != 0 && iVar31 != 0) {
+    unaff_x27 = 0;
+    uVar19 = *(uint *)(puVar33 + 3);
+    pdStack_310 = (dword *)*puVar33;
+    unaff_x28 = puVar33[1];
+/*
+ *  reversing this took months of machine time
+ *
+ *  @pengussy
+ */
+    bVar37 = *pbVar1;
+    uVar36 = (ulong)bVar37 & 0x3f;
+    uVar22 = uVar22 >> uVar36 | uVar22 << 0x40 - uVar36;
+    do {
+      uVar36 = (uVar22 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar22 & 0x5555555555555555) << 1;
+      uVar36 = (uVar36 & 0xcccccccccccccccc) >> 2 | (uVar36 & 0x3333333333333333) << 2;
+      uVar36 = (uVar36 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar36 & 0xf0f0f0f0f0f0f0f) << 4;
+      uVar36 = (uVar36 & 0xff00ff00ff00ff00) >> 8 | (uVar36 & 0xff00ff00ff00ff) << 8;
+      uVar36 = (uVar36 & 0xffff0000ffff0000) >> 0x10 | (uVar36 & 0xffff0000ffff) << 0x10;
+      uVar29 = (int)LZCOUNT(uVar36 >> 0x20 | uVar36 << 0x20) + (uint)bVar37 & 0x3f;
+      if (uVar29 != 0) {
+        uVar29 = *(uint *)(lVar3 + (ulong)uVar29 * 4);
+        if (uVar29 < uVar19) goto LAB_002da1d8;
+        Hint_Prefetch(unaff_x28 + uVar29,0,0,0);
+        adStack_300[unaff_x27] = uVar29;
+        unaff_x27 = unaff_x27 + 1;
+        iVar31 = iVar31 + -1;
+      }
+      uVar22 = uVar22 - 1 & uVar22;
+      if ((uVar22 == 0) || (iVar31 == 0)) goto LAB_002da1d8;
+    } while( true );
+  }
+LAB_002da268:
+/* reversing this took months of machine time - github.com/pengussy */
+  if (*(long *)PTR____stack_chk_guard_01f20200 == lStack_200) {
+    return uVar30;
+  }
+  auVar88 = ___stack_chk_fail();
+  pdVar44 = auVar88._8_8_;
+  lVar38 = auVar88._0_8_;
+  uStack_380 = unaff_x28;
+  uStack_378 = unaff_x27;
+  uStack_370 = unaff_x26;
+  lStack_368 = lVar53;
+  pdStack_360 = unaff_x24;
+  pdStack_358 = unaff_x23;
+  uStack_350 = uVar30;
+  pdStack_348 = pdVar43;
+  pdStack_340 = unaff_x20;
+  pdStack_338 = pdVar42;
+  ppuStack_330 = &puStack_1a0;
+  puStack_328 = &SUB_002da3e4;
+  lStack_390 = *(long *)PTR____stack_chk_guard_01f20200;
+  lVar39 = *(long *)(lVar38 + 0x70);
+  lVar52 = *(long *)(lVar38 + 0x38);
+  iVar5 = *(int *)(lVar38 + 0x34);
+  lVar53 = *(long *)(lVar38 + 8);
+  uVar29 = 1 << (ulong)(*(uint *)(lVar38 + 0x100) & 0x1f);
+  uVar32 = *(uint *)(lVar38 + 0x18);
+  uStack_498 = (ulong)uVar32;
+  uVar30 = (long)pdVar44 - lVar53;
+  uVar28 = (uint)uVar30;
+  uVar19 = uVar28 - uVar29;
+  if (uVar28 - *(uint *)(lVar38 + 0x1c) <= uVar29 || *(int *)(lVar38 + 0x28) != 0) {
+    uVar19 = *(uint *)(lVar38 + 0x1c);
+  }
+  uVar29 = *(uint *)(lVar38 + 0x10c);
+  if (3 < uVar29) {
+/*
+   donate: donate/README.md
+   github.com/pengussy  |  discord.gg/sdkhDjTex
+*/
+    uVar29 = 4;
+  }
+  uVar41 = *(ulong *)(lVar38 + 0x60);
+  iVar31 = 1 << (ulong)(uVar29 & 0x1f);
+  puVar33 = *(undefined8 **)(lVar38 + 0xf8);
+  uVar36 = (ulong)(*(long *)pdVar44 * -0x30e4432340650000) >>
+           ((ulong)(0x38 - *(int *)((long)puVar33 + 0x34)) & 0x3f);
+  uVar22 = uVar36 >> 4 & 0xffffff0;
+  pbVar1 = (byte *)(puVar33[7] + uVar22);
+  lVar3 = puVar33[0xe] + uVar22 * 4;
+  Hint_Prefetch(lVar3,0,0,0);
+  Hint_Prefetch(pbVar1,0,0,0);
+  if (*(int *)(lVar38 + 300) == 0) {
+    pdStack_4a8 = param_4;
+    pdStack_4a0 = param_3;
+    lVar23 = lVar38 + 0x40;
+    uVar29 = *(uint *)(lVar38 + 0x2c);
+    uVar22 = (ulong)uVar29;
+    lVar24 = lVar52;
+    lVar26 = lVar39;
+    if (0x180 < uVar28 - uVar29) {
+      if (uVar29 < 0xffffffa0) {
+        uVar50 = uVar22 + 0x60;
+        do {
+          uVar51 = (*(long *)(lVar53 + 8 + uVar22) * -0x30e4432340650000 ^ *(ulong *)(lVar38 + 0x60)
+                   ) >> ((ulong)(0x38 - iVar5) & 0x3f);
+          uVar45 = uVar51 >> 4 & 0xffffff0;
+          Hint_Prefetch(lVar39 + uVar45 * 4,0,0,0);
+/* thanks for reading - discord.gg/sdkhDjTex */
+          Hint_Prefetch(lVar52 + uVar45,0,0,0);
+          uVar46 = *(uint *)(lVar23 + (uVar22 & 7) * 4);
+          *(int *)(lVar23 + (uVar22 & 7) * 4) = (int)uVar51;
+          uVar51 = (ulong)(uVar46 >> 4) & 0xffffff0;
+          pbVar2 = (byte *)(lVar52 + uVar51);
+          unaff_x26 = (ulong)(*pbVar2 - 1 & 0xf);
+          uVar29 = 0xf;
+          if ((*pbVar2 & 0xf) != 1) {
+            uVar29 = 0;
+          }
+          unaff_x24 = (dword *)(uVar29 + unaff_x26);
+          *pbVar2 = (byte)unaff_x24;
+          pbVar2[(long)unaff_x24] = (byte)uVar46;
+          *(int *)(lVar39 + uVar51 * 4 + (long)unaff_x24 * 4) = (int)uVar22;
+          uVar22 = uVar22 + 1;
+        } while (uVar50 != uVar22);
+        lVar26 = *(long *)(lVar38 + 0x70);
+        lVar24 = *(long *)(lVar38 + 0x38);
+      }
+      uVar29 = uVar28 - 0x20;
+      uVar22 = (ulong)uVar29;
+      iVar48 = (int)(undefined1 *)((long)pdVar44 + 1U) - (int)(undefined1 *)(lVar53 + uVar22);
+      unaff_x23 = &MACH_HEADER.cpusubtype;
+/*  origin: github.com/pengussy  */
+      iVar47 = 8;
+      if (iVar48 + 1U < 8) {
+        iVar47 = iVar48 + 1;
+      }
+      iVar48 = 0;
+      if ((undefined1 *)(lVar53 + uVar22) <= (undefined1 *)((long)pdVar44 + 1U)) {
+        iVar48 = iVar47;
+      }
+      unaff_x20 = (dword *)(ulong)(iVar48 + uVar29);
+      if (uVar29 < iVar48 + uVar29) {
+        iVar47 = *(int *)(lVar38 + 0x34);
+        unaff_x20 = *(dword **)(lVar38 + 0x60);
+        do {
+          unaff_x23 = (dword *)((*(long *)(lVar53 + uVar22) * -0x30e4432340650000 ^ (ulong)unaff_x20
+                                ) >> ((ulong)(0x38 - iVar47) & 0x3f));
+          uVar50 = (ulong)unaff_x23 >> 4 & 0xffffff0;
+          unaff_x26 = uVar50 * 4;
+          Hint_Prefetch(lVar26 + unaff_x26,0,0,0);
+          Hint_Prefetch(lVar24 + uVar50,0,0,0);
+          unaff_x24 = (dword *)(uVar22 & 7);
+          *(int *)(lVar23 + (long)unaff_x24 * 4) = (int)unaff_x23;
+          uVar22 = uVar22 + 1;
+          iVar48 = iVar48 + -1;
+        } while (iVar48 != 0);
+      }
+    }
+    if (uVar29 < uVar28) {
+      lVar27 = *(long *)(lVar38 + 8);
+      iVar47 = *(int *)(lVar38 + 0x34);
+      puVar20 = (uint *)(ulong)uVar29;
+      unaff_x20 = (dword *)(uVar30 & 0xffffffff);
+      do {
+        uVar22 = (*(long *)(lVar27 + 8 + (long)puVar20) * -0x30e4432340650000 ^
+                 *(ulong *)(lVar38 + 0x60)) >> ((ulong)(0x38 - iVar47) & 0x3f);
+        uVar50 = uVar22 >> 4 & 0xffffff0;
+        Hint_Prefetch(lVar26 + uVar50 * 4,0,0,0);
+        Hint_Prefetch(lVar24 + uVar50,0,0,0);
+// watermarked copy - do not remove
+        uVar46 = *(uint *)(lVar23 + ((ulong)puVar20 & 7) * 4);
+        unaff_x26 = (ulong)uVar46;
+        *(int *)(lVar23 + ((ulong)puVar20 & 7) * 4) = (int)uVar22;
+        uVar22 = (ulong)(uVar46 >> 4) & 0xffffff0;
+        unaff_x24 = (dword *)(lVar26 + uVar22 * 4);
+        unaff_x23 = (dword *)(lVar24 + uVar22);
+        unaff_x28 = (ulong)((byte)*unaff_x23 - 1 & 0xf);
+        uVar29 = 0xf;
+        if (((byte)*unaff_x23 & 0xf) != 1) {
+          uVar29 = 0;
+        }
+        unaff_x27 = uVar29 + unaff_x28;
+        *(char *)unaff_x23 = (char)unaff_x27;
+        *(char *)((long)unaff_x23 + unaff_x27) = (char)uVar46;
+        unaff_x24[unaff_x27] = (uint)puVar20;
+        puVar20 = (uint *)((long)puVar20 + 1);
+      } while (puVar20 < unaff_x20);
+    }
+    *(uint *)(lVar38 + 0x2c) = uVar28;
+    uVar22 = (*(long *)(lVar53 + (uVar30 & 0xffffffff) + 8) * -0x30e4432340650000 ^ uVar41) >>
+             ((ulong)(0x38 - iVar5) & 0x3f);
+    uVar41 = uVar22 >> 4 & 0xffffff0;
+    Hint_Prefetch(lVar39 + uVar41 * 4,0,0,0);
+    Hint_Prefetch(lVar52 + uVar41,0,0,0);
+    uVar29 = *(uint *)(lVar23 + (uVar30 & 7) * 4);
+    *(int *)(lVar23 + (uVar30 & 7) * 4) = (int)uVar22;
+  }
+  else {
+    uVar29 = (uint)((*(long *)pdVar44 * -0x30e4432340650000 ^ uVar41) >>
+                   ((ulong)(0x38 - iVar5) & 0x3f));
+    *(uint *)(lVar38 + 0x2c) = uVar28;
+  }
+  *(uint *)(lVar38 + 0x68) = *(int *)(lVar38 + 0x68) + uVar29;
+  uVar30 = (ulong)(uVar29 >> 4) & 0xffffff0;
+  lVar39 = lVar39 + uVar30 * 4;
+// WM - found on a paste site? it was re-uploaded illegally
+  pbVar2 = (byte *)(lVar52 + uVar30);
+  bVar37 = *pbVar2;
+  bVar35 = *pbVar2;
+  bVar40 = (byte)uVar29;
+  uVar56 = CONCAT11(-(pbVar2[9] == bVar40),-(pbVar2[8] == bVar40));
+  uVar57 = CONCAT13(-(pbVar2[0xb] == bVar40),CONCAT12(-(pbVar2[10] == bVar40),uVar56));
+  uVar58 = CONCAT15(-(pbVar2[0xd] == bVar40),CONCAT14(-(pbVar2[0xc] == bVar40),uVar57));
+  uVar30 = CONCAT17((char)(CONCAT17(-(pbVar2[0xf] == bVar40),
+                                    CONCAT16(-(pbVar2[0xe] == bVar40),uVar58)) >> 0x34),
+                    CONCAT16((char)((uint6)uVar58 >> 0x24),
+                             CONCAT15((char)((uint)uVar57 >> 0x14),
+                                      CONCAT14((char)(uVar56 >> 4),
+                                               CONCAT13((char)(CONCAT11(-(pbVar2[7] == bVar40),
+                                                                        -(pbVar2[6] == bVar40)) >> 4
+                                                              ),CONCAT12((char)(CONCAT11(-(pbVar2[5]
+                                                                                          == bVar40)
+                                                                                         ,-(pbVar2[4
+                                                  ] == bVar40)) >> 4),
+                                                  CONCAT11((char)(CONCAT11(-(pbVar2[3] == bVar40),
+                                                                           -(pbVar2[2] == bVar40))
+                                                                 >> 4),
+                                                           (char)(CONCAT11(-(pbVar2[1] == bVar40),
+                                                                           -(bVar35 == bVar40)) >> 4
+                                                                 ))))))));
+  uVar22 = (ulong)bVar37 & 0xf;
+  pdVar42 = (dword *)(ulong)bVar35;
+  uVar30 = (uVar30 >> uVar22 * 4 | uVar30 << uVar22 * -4 + 0x40) & 0x8888888888888888;
+/* origin: github.com/pengussy */
+  if (uVar30 != 0) {
+    lVar52 = 0;
+    do {
+      uVar22 = (uVar30 >> 3 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar30 >> 3 & 0xf0f0f0f0f0f0f0f) << 4;
+      uVar22 = (uVar22 & 0xff00ff00ff00ff00) >> 8 | (uVar22 & 0xff00ff00ff00ff) << 8;
+      uVar22 = (uVar22 & 0xffff0000ffff0000) >> 0x10 | (uVar22 & 0xffff0000ffff) << 0x10;
+      uVar29 = (int)LZCOUNT(uVar22 >> 0x20 | uVar22 << 0x20) + (bVar37 & 0x3f) * 4 >> 2 & 0xf;
+      if (uVar29 != 0) {
+        uVar29 = *(uint *)(lVar39 + (ulong)uVar29 * 4);
+        if (uVar29 < uVar19) goto code_r0x002da674;
+        Hint_Prefetch(lVar53 + (ulong)uVar29,0,0,0);
+        adStack_490[lVar52] = uVar29;
+        lVar52 = lVar52 + 1;
+        iVar31 = iVar31 + -1;
+      }
+      uVar30 = uVar30 - 1 & uVar30;
+      if ((uVar30 == 0) || (iVar31 == 0)) goto code_r0x002da674;
+    } while( true );
+  }
+  lVar52 = 0;
+code_r0x002da674:
+  uVar19 = 0xf;
+  if ((bVar35 & 0xf) != 1) {
+    uVar19 = 0;
+  }
+  lVar23 = (ulong)uVar19 + (ulong)(bVar35 - 1 & 0xf);
+  *pbVar2 = (byte)lVar23;
+  pbVar2[lVar23] = bVar40;
+  iVar5 = *(int *)(lVar38 + 0x2c);
+  *(int *)(lVar38 + 0x2c) = iVar5 + 1;
+  *(int *)(lVar39 + lVar23 * 4) = iVar5;
+  if (lVar52 == 0) {
+    uVar30 = 3;
+  }
+  else {
+/*
+ *  if you paid for this, you were scammed
+ *
+ *  @pengussy
+ */
+    lVar39 = 0;
+    unaff_x27 = (ulong)(uVar28 + 3);
+    unaff_x26 = lVar53 + 8;
+    uVar22 = 3;
+    do {
+      uVar29 = adStack_490[lVar39];
+      pdVar43 = (dword *)(lVar53 + (ulong)uVar29);
+      uVar19 = *(uint *)((long)pdVar43 + (uVar22 - 3));
+      pdVar42 = (dword *)(ulong)uVar19;
+      uVar46 = *(uint *)((long)pdVar44 + (uVar22 - 3));
+      unaff_x20 = (dword *)(ulong)uVar46;
+      if (uVar19 == uVar46) {
+        if (pdVar44 < (uint *)((long)param_3 + -7)) {
+          unaff_x20 = *(dword **)pdVar44;
+          if (*(uint **)pdVar43 == unaff_x20) {
+            pdVar42 = (dword *)0x0;
+            pdVar43 = (dword *)(unaff_x26 + uVar29);
+            pdVar49 = pdVar44 + 2;
+            do {
+              if ((uint *)((long)param_3 + -7) <= pdVar49) goto code_r0x002da764;
+              unaff_x20 = *(dword **)pdVar43;
+              unaff_x23 = pdVar49 + 2;
+              unaff_x24 = *(dword **)pdVar49;
+              pdVar42 = pdVar42 + 2;
+              pdVar43 = pdVar43 + 2;
+              pdVar49 = unaff_x23;
+            } while (unaff_x20 == unaff_x24);
+            uVar30 = (((ulong)unaff_x24 ^ (ulong)unaff_x20) & 0xaaaaaaaaaaaaaaaa) >> 1 |
+                     (((ulong)unaff_x24 ^ (ulong)unaff_x20) & 0x5555555555555555) << 1;
+/* WM: found on a paste site? it was re-uploaded illegally @ discord.gg/sdkhDjTex */
+            uVar30 = (uVar30 & 0xcccccccccccccccc) >> 2 | (uVar30 & 0x3333333333333333) << 2;
+            uVar30 = (uVar30 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar30 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar30 = (uVar30 & 0xff00ff00ff00ff00) >> 8 | (uVar30 & 0xff00ff00ff00ff) << 8;
+            uVar30 = (uVar30 & 0xffff0000ffff0000) >> 0x10 | (uVar30 & 0xffff0000ffff) << 0x10;
+            unaff_x20 = (dword *)LZCOUNT(uVar30 >> 0x20 | uVar30 << 0x20);
+            uVar30 = (long)pdVar42 + ((ulong)unaff_x20 >> 3);
+          }
+          else {
+            uVar30 = (ulong)unaff_x20 ^ (ulong)*(uint **)pdVar43;
+            uVar30 = (uVar30 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar30 & 0x5555555555555555) << 1;
+            uVar30 = (uVar30 & 0xcccccccccccccccc) >> 2 | (uVar30 & 0x3333333333333333) << 2;
+            uVar30 = (uVar30 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar30 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar30 = (uVar30 & 0xff00ff00ff00ff00) >> 8 | (uVar30 & 0xff00ff00ff00ff) << 8;
+            uVar30 = (uVar30 & 0xffff0000ffff0000) >> 0x10 | (uVar30 & 0xffff0000ffff) << 0x10;
+            pdVar42 = (dword *)LZCOUNT(uVar30 >> 0x20 | uVar30 << 0x20);
+            uVar30 = (ulong)pdVar42 >> 3;
+          }
+        }
+        else {
+          pdVar49 = pdVar44;
+code_r0x002da764:
+          if (pdVar49 < (uint *)((long)param_3 + -3)) {
+            pdVar42 = pdVar49 + 1;
+            unaff_x20 = pdVar43 + 1;
+            if (*pdVar43 == *pdVar49) {
+              pdVar49 = pdVar42;
+              pdVar43 = unaff_x20;
+            }
+          }
+          unaff_x23 = pdVar49;
+          if (pdVar49 < (uint *)((long)param_3 + -1)) {
+            pdVar42 = (dword *)((long)pdVar49 + 2);
+            unaff_x20 = (dword *)((long)pdVar43 + 2);
+// WM - stripping the watermark breaks the license
+            if ((short)*pdVar43 == (short)*pdVar49) {
+              pdVar43 = unaff_x20;
+              unaff_x23 = pdVar42;
+            }
+          }
+          if (unaff_x23 < param_3) {
+            pdVar42 = (dword *)(ulong)(byte)*pdVar43;
+            unaff_x20 = (dword *)((long)unaff_x23 + 1);
+            if ((byte)*pdVar43 == (byte)*unaff_x23) {
+              unaff_x23 = unaff_x20;
+            }
+          }
+          uVar30 = (long)unaff_x23 - (long)pdVar44;
+        }
+        if (uVar22 < uVar30) {
+          *(ulong *)param_4 = (ulong)((uVar28 + 3) - uVar29);
+          uVar22 = uVar30;
+          if ((uint *)((long)pdVar44 + uVar30) == param_3) break;
+        }
+      }
+      lVar39 = lVar39 + 1;
+      uVar30 = uVar22;
+    } while (lVar39 != lVar52);
+  }
+  bVar37 = *pbVar1;
+  bVar35 = (byte)uVar36;
+/*
+   origin: github.com/pengussy
+   github.com/pengussy  |  discord.gg/sdkhDjTex
+*/
+  uVar56 = CONCAT11(-(pbVar1[1] == bVar35),-(*pbVar1 == bVar35));
+  uVar57 = CONCAT13(-(pbVar1[3] == bVar35),CONCAT12(-(pbVar1[2] == bVar35),uVar56));
+  uVar58 = CONCAT15(-(pbVar1[5] == bVar35),CONCAT14(-(pbVar1[4] == bVar35),uVar57));
+  uVar59 = CONCAT17(-(pbVar1[7] == bVar35),CONCAT16(-(pbVar1[6] == bVar35),uVar58));
+  auVar62._0_10_ = CONCAT19(-(pbVar1[9] == bVar35),CONCAT18(-(pbVar1[8] == bVar35),uVar59));
+  auVar62[10] = -(pbVar1[10] == bVar35);
+  auVar62[0xb] = -(pbVar1[0xb] == bVar35);
+  auVar67[0xc] = -(pbVar1[0xc] == bVar35);
+  auVar67._0_12_ = auVar62;
+  auVar67[0xd] = -(pbVar1[0xd] == bVar35);
+  auVar72[0xe] = -(pbVar1[0xe] == bVar35);
+  auVar72._0_14_ = auVar67;
+  auVar72[0xf] = -(pbVar1[0xf] == bVar35);
+  uVar36 = CONCAT17((char)(auVar72._14_2_ >> 4),
+                    CONCAT16((char)(auVar67._12_2_ >> 4),
+                             CONCAT15((char)(auVar62._10_2_ >> 4),
+/* more drops soon - github.com/pengussy - github.com/pengussy */
+                                      CONCAT14((char)((unkuint10)auVar62._0_10_ >> 0x44),
+                                               CONCAT13((char)((ulong)uVar59 >> 0x34),
+                                                        CONCAT12((char)((uint6)uVar58 >> 0x24),
+                                                                 CONCAT11((char)((uint)uVar57 >>
+                                                                                0x14),
+                                                                          (char)(uVar56 >> 4))))))))
+  ;
+  uVar22 = (ulong)bVar37 & 0xf;
+  uVar22 = (uVar36 >> uVar22 * 4 | uVar36 << uVar22 * -4 + 0x40) & 0x8888888888888888;
+  if (uVar22 != 0 && iVar31 != 0) {
+    unaff_x27 = 0;
+    uVar19 = *(uint *)(puVar33 + 3);
+    pdStack_4a0 = (dword *)*puVar33;
+    unaff_x28 = puVar33[1];
+    do {
+      uVar36 = (uVar22 >> 3 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar22 >> 3 & 0xf0f0f0f0f0f0f0f) << 4;
+      uVar36 = (uVar36 & 0xff00ff00ff00ff00) >> 8 | (uVar36 & 0xff00ff00ff00ff) << 8;
+      uVar36 = (uVar36 & 0xffff0000ffff0000) >> 0x10 | (uVar36 & 0xffff0000ffff) << 0x10;
+      uVar29 = (int)LZCOUNT(uVar36 >> 0x20 | uVar36 << 0x20) + (bVar37 & 0x3f) * 4 >> 2 & 0xf;
+// WM - donate: donate/README.md
+      if (uVar29 != 0) {
+        uVar29 = *(uint *)(lVar3 + (ulong)uVar29 * 4);
+        if (uVar29 < uVar19) goto code_r0x002da8b0;
+        Hint_Prefetch(unaff_x28 + uVar29,0,0,0);
+        adStack_490[unaff_x27] = uVar29;
+        unaff_x27 = unaff_x27 + 1;
+        iVar31 = iVar31 + -1;
+      }
+      uVar22 = uVar22 - 1 & uVar22;
+      if ((uVar22 == 0) || (iVar31 == 0)) goto code_r0x002da8b0;
+    } while( true );
+  }
+code_r0x002da940:
+  if (*(long *)PTR____stack_chk_guard_01f20200 == lStack_390) {
+    return uVar30;
+  }
+  auVar88 = ___stack_chk_fail();
+  pdVar43 = auVar88._8_8_;
+  lVar38 = auVar88._0_8_;
+  uStack_510 = unaff_x28;
+  uStack_508 = unaff_x27;
+  uStack_500 = unaff_x26;
+  lStack_4f8 = lVar53;
+  pdStack_4f0 = unaff_x24;
+  pdStack_4e8 = unaff_x23;
+  uStack_4e0 = uVar30;
+  pdStack_4d8 = pdVar44;
+  pdStack_4d0 = unaff_x20;
+  pdStack_4c8 = pdVar42;
+  pppuStack_4c0 = &ppuStack_330;
+  puStack_4b8 = &SUB_002daaa8;
+  lStack_520 = *(long *)PTR____stack_chk_guard_01f20200;
+  lVar39 = *(long *)(lVar38 + 0x70);
+/*
+ *  chat: discord.gg/sdkhDjTex
+ *
+ *  @pengussy
+ */
+  lVar52 = *(long *)(lVar38 + 0x38);
+  iVar5 = *(int *)(lVar38 + 0x34);
+  lVar53 = *(long *)(lVar38 + 8);
+  uVar29 = 1 << (ulong)(*(uint *)(lVar38 + 0x100) & 0x1f);
+  uVar32 = *(uint *)(lVar38 + 0x18);
+  uStack_628 = (ulong)uVar32;
+  uVar30 = (long)pdVar43 - lVar53;
+  uVar28 = (uint)uVar30;
+  uVar19 = uVar28 - uVar29;
+  if (uVar28 - *(uint *)(lVar38 + 0x1c) <= uVar29 || *(int *)(lVar38 + 0x28) != 0) {
+    uVar19 = *(uint *)(lVar38 + 0x1c);
+  }
+  uVar29 = *(uint *)(lVar38 + 0x10c);
+  if (4 < uVar29) {
+    uVar29 = 5;
+  }
+  uVar41 = *(ulong *)(lVar38 + 0x60);
+  iVar31 = 1 << (ulong)(uVar29 & 0x1f);
+  puVar33 = *(undefined8 **)(lVar38 + 0xf8);
+  uVar36 = (ulong)(*(long *)pdVar43 * -0x30e4432340650000) >>
+           ((ulong)(0x38 - *(int *)((long)puVar33 + 0x34)) & 0x3f);
+  uVar22 = uVar36 >> 3 & 0x1fffffe0;
+  pbVar1 = (byte *)(puVar33[7] + uVar22);
+  lVar3 = puVar33[0xe] + uVar22 * 4;
+  Hint_Prefetch(lVar3,0,0,0);
+  Hint_Prefetch(lVar3 + 0x40,0,0,0);
+  Hint_Prefetch(pbVar1,0,0,0);
+  if (*(int *)(lVar38 + 300) == 0) {
+    pdStack_630 = (dword *)CONCAT44(pdStack_630._4_4_,iVar5);
+    pdStack_638 = param_3;
+    lVar23 = lVar38 + 0x40;
+    uVar29 = *(uint *)(lVar38 + 0x2c);
+/* no support for modified copies */
+    uVar22 = (ulong)uVar29;
+    lVar24 = lVar52;
+    lVar26 = lVar39;
+    if (0x180 < uVar28 - uVar29) {
+      if (uVar29 < 0xffffffa0) {
+        uVar50 = uVar22 + 0x60;
+        do {
+          uVar51 = (*(long *)(lVar53 + 8 + uVar22) * -0x30e4432340650000 ^ *(ulong *)(lVar38 + 0x60)
+                   ) >> ((ulong)(0x38 - iVar5) & 0x3f);
+          uVar45 = uVar51 >> 3 & 0x1fffffe0;
+          lVar24 = lVar39 + uVar45 * 4;
+          Hint_Prefetch(lVar24,0,0,0);
+          Hint_Prefetch(lVar24 + 0x40,0,0,0);
+          Hint_Prefetch(lVar52 + uVar45,0,0,0);
+          uVar46 = *(uint *)(lVar23 + (uVar22 & 7) * 4);
+          *(int *)(lVar23 + (uVar22 & 7) * 4) = (int)uVar51;
+          uVar51 = (ulong)(uVar46 >> 3) & 0x1fffffe0;
+          pbVar2 = (byte *)(lVar52 + uVar51);
+          unaff_x26 = (ulong)(*pbVar2 - 1 & 0x1f);
+          uVar29 = 0x1f;
+          if ((*pbVar2 & 0x1f) != 1) {
+            uVar29 = 0;
+          }
+          unaff_x24 = (dword *)(uVar29 + unaff_x26);
+          *pbVar2 = (byte)unaff_x24;
+          pbVar2[(long)unaff_x24] = (byte)uVar46;
+          *(int *)(lVar39 + uVar51 * 4 + (long)unaff_x24 * 4) = (int)uVar22;
+          uVar22 = uVar22 + 1;
+        } while (uVar50 != uVar22);
+        lVar26 = *(long *)(lVar38 + 0x70);
+        lVar24 = *(long *)(lVar38 + 0x38);
+// stripping the watermark breaks the license
+      }
+      uVar29 = uVar28 - 0x20;
+      uVar22 = (ulong)uVar29;
+      iVar48 = (int)(undefined1 *)((long)pdVar43 + 1U) - (int)(undefined1 *)(lVar53 + uVar22);
+      unaff_x23 = &MACH_HEADER.cpusubtype;
+      iVar47 = 8;
+      if (iVar48 + 1U < 8) {
+        iVar47 = iVar48 + 1;
+      }
+      iVar48 = 0;
+      if ((undefined1 *)(lVar53 + uVar22) <= (undefined1 *)((long)pdVar43 + 1U)) {
+        iVar48 = iVar47;
+      }
+      unaff_x20 = (dword *)(ulong)(iVar48 + uVar29);
+      if (uVar29 < iVar48 + uVar29) {
+        iVar47 = *(int *)(lVar38 + 0x34);
+        unaff_x20 = *(dword **)(lVar38 + 0x60);
+        do {
+          unaff_x23 = (dword *)((*(long *)(lVar53 + uVar22) * -0x30e4432340650000 ^ (ulong)unaff_x20
+                                ) >> ((ulong)(0x38 - iVar47) & 0x3f));
+          uVar50 = (ulong)unaff_x23 >> 3 & 0x1fffffe0;
+          unaff_x26 = lVar26 + uVar50 * 4;
+          Hint_Prefetch(unaff_x26,0,0,0);
+          Hint_Prefetch(unaff_x26 + 0x40,0,0,0);
+// WM - if you paid for this, you were scammed
+          Hint_Prefetch(lVar24 + uVar50,0,0,0);
+          unaff_x24 = (dword *)(uVar22 & 7);
+          *(int *)(lVar23 + (long)unaff_x24 * 4) = (int)unaff_x23;
+          uVar22 = uVar22 + 1;
+          iVar48 = iVar48 + -1;
+        } while (iVar48 != 0);
+      }
+    }
+    if (uVar29 < uVar28) {
+      lVar27 = *(long *)(lVar38 + 8);
+      iVar47 = *(int *)(lVar38 + 0x34);
+      puVar20 = (uint *)(ulong)uVar29;
+      unaff_x20 = (dword *)(uVar30 & 0xffffffff);
+      do {
+        uVar22 = (*(long *)(lVar27 + 8 + (long)puVar20) * -0x30e4432340650000 ^
+                 *(ulong *)(lVar38 + 0x60)) >> ((ulong)(0x38 - iVar47) & 0x3f);
+        uVar50 = uVar22 >> 3 & 0x1fffffe0;
+        lVar4 = lVar26 + uVar50 * 4;
+        Hint_Prefetch(lVar4,0,0,0);
+        Hint_Prefetch(lVar4 + 0x40,0,0,0);
+        Hint_Prefetch(lVar24 + uVar50,0,0,0);
+/* WM: do not claim this as your own @ discord.gg/sdkhDjTex */
+        uVar46 = *(uint *)(lVar23 + ((ulong)puVar20 & 7) * 4);
+        unaff_x26 = (ulong)uVar46;
+        *(int *)(lVar23 + ((ulong)puVar20 & 7) * 4) = (int)uVar22;
+        uVar22 = (ulong)(uVar46 >> 3) & 0x1fffffe0;
+        unaff_x24 = (dword *)(lVar26 + uVar22 * 4);
+        unaff_x23 = (dword *)(lVar24 + uVar22);
+        unaff_x28 = (ulong)((byte)*unaff_x23 - 1 & 0x1f);
+        uVar29 = 0x1f;
+        if (((byte)*unaff_x23 & 0x1f) != 1) {
+          uVar29 = 0;
+        }
+        unaff_x27 = uVar29 + unaff_x28;
+        *(char *)unaff_x23 = (char)unaff_x27;
+        *(char *)((long)unaff_x23 + unaff_x27) = (char)uVar46;
+        unaff_x24[unaff_x27] = (uint)puVar20;
+        puVar20 = (uint *)((long)puVar20 + 1);
+      } while (puVar20 < unaff_x20);
+    }
+    *(uint *)(lVar38 + 0x2c) = uVar28;
+    uVar22 = (*(long *)(lVar53 + (uVar30 & 0xffffffff) + 8) * -0x30e4432340650000 ^ uVar41) >>
+             ((ulong)(0x38 - iVar5) & 0x3f);
+    uVar41 = uVar22 >> 3 & 0x1fffffe0;
+    lVar24 = lVar39 + uVar41 * 4;
+    Hint_Prefetch(lVar24,0,0,0);
+    Hint_Prefetch(lVar24 + 0x40,0,0,0);
+/* WM: proprietary - see LICENSE - do not sell @ discord.gg/sdkhDjTex */
+    Hint_Prefetch(lVar52 + uVar41,0,0,0);
+    uVar29 = *(uint *)(lVar23 + (uVar30 & 7) * 4);
+    *(int *)(lVar23 + (uVar30 & 7) * 4) = (int)uVar22;
+  }
+  else {
+    uVar29 = (uint)((*(long *)pdVar43 * -0x30e4432340650000 ^ uVar41) >>
+                   ((ulong)(0x38 - iVar5) & 0x3f));
+    *(uint *)(lVar38 + 0x2c) = uVar28;
+  }
+  *(uint *)(lVar38 + 0x68) = *(int *)(lVar38 + 0x68) + uVar29;
+  uVar30 = (ulong)(uVar29 >> 3) & 0x1fffffe0;
+  lVar39 = lVar39 + uVar30 * 4;
+  pbVar2 = (byte *)(lVar52 + uVar30);
+  bVar37 = *pbVar2;
+  pdVar42 = (dword *)(ulong)bVar37;
+  bVar35 = (byte)uVar29;
+  uVar77 = CONCAT11(-(bVar35 == (byte)((ushort)*(undefined2 *)pbVar2 >> 8)),
+                    -(bVar35 == (byte)*(undefined2 *)pbVar2));
+  uVar78 = CONCAT13(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 4) >> 8)),
+                    CONCAT12(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 4)),uVar77));
+  uVar79 = CONCAT15(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 8) >> 8)),
+                    CONCAT14(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 8)),uVar78));
+  uVar80 = CONCAT11(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x10) >> 8)),
+                    -(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x10)));
+  uVar81 = CONCAT13(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x14) >> 8)),
+                    CONCAT12(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x14)),uVar80));
+  uVar82 = CONCAT15(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x18) >> 8)),
+                    CONCAT14(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x18)),uVar81));
+  uVar56 = CONCAT11(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 2) >> 8)),
+                    -(bVar35 == (byte)*(undefined2 *)(pbVar2 + 2)));
+  uVar57 = CONCAT13(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 6) >> 8)),
+                    CONCAT12(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 6)),uVar56));
+  uVar58 = CONCAT15(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 10) >> 8)),
+/* found on a paste site? it was re-uploaded illegally */
+                    CONCAT14(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 10)),uVar57));
+  uVar59 = CONCAT17(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0xe) >> 8)),
+                    CONCAT16(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0xe)),uVar58));
+  auVar63._0_10_ =
+       CONCAT19(-(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x12) >> 8)),
+                CONCAT18(-(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x12)),uVar59));
+  auVar63[10] = -(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x16));
+  auVar63[0xb] = -(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x16) >> 8));
+  auVar68[0xc] = -(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x1a));
+  auVar68._0_12_ = auVar63;
+  auVar68[0xd] = -(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x1a) >> 8));
+  auVar73[0xe] = -(bVar35 == (byte)*(undefined2 *)(pbVar2 + 0x1e));
+  auVar73._0_14_ = auVar68;
+  auVar73[0xf] = -(bVar35 == (byte)((ushort)*(undefined2 *)(pbVar2 + 0x1e) >> 8));
+  uVar30 = NEON_sli(CONCAT17((char)(CONCAT17(-(bVar35 ==
+                                              (byte)((ushort)*(undefined2 *)(pbVar2 + 0x1c) >> 8)),
+                                             CONCAT16(-(bVar35 ==
+                                                       (byte)*(undefined2 *)(pbVar2 + 0x1c)),uVar82)
+                                            ) >> 0x36),
+                             CONCAT16((char)((uint6)uVar82 >> 0x26),
+                                      CONCAT15((char)((uint)uVar81 >> 0x16),
+                                               CONCAT14((char)(uVar80 >> 6),
+                                                        CONCAT13((char)(CONCAT17(-(bVar35 ==
+                                                                                  (byte)((ushort)*(
+                                                  undefined2 *)(pbVar2 + 0xc) >> 8)),
+                                                  CONCAT16(-(bVar35 ==
+/* wm:chat: discord.gg/sdkhDjTex */
+                                                            (byte)*(undefined2 *)(pbVar2 + 0xc)),
+                                                           uVar79)) >> 0x36),
+                                                  CONCAT12((char)((uint6)uVar79 >> 0x26),
+                                                           CONCAT11((char)((uint)uVar78 >> 0x16),
+                                                                    (char)(uVar77 >> 6)))))))),
+                    CONCAT17((char)(auVar73._14_2_ >> 6),
+                             CONCAT16((char)(auVar68._12_2_ >> 6),
+                                      CONCAT15((char)(auVar63._10_2_ >> 6),
+                                               CONCAT14((char)((unkuint10)auVar63._0_10_ >> 0x46),
+                                                        CONCAT13((char)((ulong)uVar59 >> 0x36),
+                                                                 CONCAT12((char)((uint6)uVar58 >>
+                                                                                0x26),
+                                                                          CONCAT11((char)((uint)
+                                                  uVar57 >> 0x16),(char)(uVar56 >> 6)))))))),4,1);
+  uVar30 = (uVar30 >> ((ulong)bVar37 & 0x1f) * 2 | uVar30 << ((ulong)bVar37 & 0x1f) * -2 + 0x40) &
+           0x5555555555555555;
+  if (uVar30 != 0) {
+    lVar52 = 0;
+    do {
+      uVar22 = (uVar30 << 1 & 0xcccccccccccccccc) >> 2 | (uVar30 << 1 & 0x3333333333333333) << 2;
+      uVar22 = (uVar22 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar22 & 0xf0f0f0f0f0f0f0f) << 4;
+      uVar22 = (uVar22 & 0xff00ff00ff00ff00) >> 8 | (uVar22 & 0xff00ff00ff00ff) << 8;
+      uVar22 = (uVar22 & 0xffff0000ffff0000) >> 0x10 | (uVar22 & 0xffff0000ffff) << 0x10;
+      uVar29 = (int)LZCOUNT(uVar22 >> 0x20 | uVar22 << 0x20) + (bVar37 & 0x7f) * 2 >> 1 & 0x1f;
+// keep the notice, keep the source honest
+      if (uVar29 != 0) {
+        uVar29 = *(uint *)(lVar39 + (ulong)uVar29 * 4);
+        if (uVar29 < uVar19) goto code_r0x002dad54;
+        Hint_Prefetch(lVar53 + (ulong)uVar29,0,0,0);
+        adStack_620[lVar52] = uVar29;
+        lVar52 = lVar52 + 1;
+        iVar31 = iVar31 + -1;
+      }
+      uVar30 = uVar30 - 1 & uVar30;
+      if ((uVar30 == 0) || (iVar31 == 0)) goto code_r0x002dad54;
+    } while( true );
+  }
+  lVar52 = 0;
+code_r0x002dad54:
+  uVar19 = 0x1f;
+  if ((bVar37 & 0x1f) != 1) {
+    uVar19 = 0;
+  }
+  lVar23 = (ulong)uVar19 + (ulong)(bVar37 - 1 & 0x1f);
+  *pbVar2 = (byte)lVar23;
+  pbVar2[lVar23] = bVar35;
+  iVar5 = *(int *)(lVar38 + 0x2c);
+  *(int *)(lVar38 + 0x2c) = iVar5 + 1;
+  *(int *)(lVar39 + lVar23 * 4) = iVar5;
+  if (lVar52 == 0) {
+/*  found on a paste site? it was re-uploaded illegally  */
+    uVar30 = 3;
+  }
+  else {
+    lVar39 = 0;
+    unaff_x27 = (ulong)(uVar28 + 3);
+    unaff_x26 = lVar53 + 8;
+    uVar22 = 3;
+    do {
+      uVar29 = adStack_620[lVar39];
+      pdVar44 = (dword *)(lVar53 + (ulong)uVar29);
+      uVar19 = *(uint *)((long)pdVar44 + (uVar22 - 3));
+      pdVar42 = (dword *)(ulong)uVar19;
+      uVar46 = *(uint *)((long)pdVar43 + (uVar22 - 3));
+      unaff_x20 = (dword *)(ulong)uVar46;
+      if (uVar19 == uVar46) {
+        if (pdVar43 < (uint *)((long)param_3 + -7)) {
+          unaff_x20 = *(dword **)pdVar43;
+          if (*(uint **)pdVar44 == unaff_x20) {
+            pdVar42 = (dword *)0x0;
+/* WM: unlicensed copy if this notice is missing @ discord.gg/sdkhDjTex */
+            pdVar44 = (dword *)(unaff_x26 + uVar29);
+            pdVar49 = pdVar43 + 2;
+            do {
+              if ((uint *)((long)param_3 + -7) <= pdVar49) goto code_r0x002dae44;
+              unaff_x20 = *(dword **)pdVar44;
+              unaff_x23 = pdVar49 + 2;
+              unaff_x24 = *(dword **)pdVar49;
+              pdVar42 = pdVar42 + 2;
+              pdVar44 = pdVar44 + 2;
+              pdVar49 = unaff_x23;
+            } while (unaff_x20 == unaff_x24);
+            uVar30 = (((ulong)unaff_x24 ^ (ulong)unaff_x20) & 0xaaaaaaaaaaaaaaaa) >> 1 |
+                     (((ulong)unaff_x24 ^ (ulong)unaff_x20) & 0x5555555555555555) << 1;
+            uVar30 = (uVar30 & 0xcccccccccccccccc) >> 2 | (uVar30 & 0x3333333333333333) << 2;
+            uVar30 = (uVar30 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar30 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar30 = (uVar30 & 0xff00ff00ff00ff00) >> 8 | (uVar30 & 0xff00ff00ff00ff) << 8;
+            uVar30 = (uVar30 & 0xffff0000ffff0000) >> 0x10 | (uVar30 & 0xffff0000ffff) << 0x10;
+            unaff_x20 = (dword *)LZCOUNT(uVar30 >> 0x20 | uVar30 << 0x20);
+            uVar30 = (long)pdVar42 + ((ulong)unaff_x20 >> 3);
+          }
+          else {
+            uVar30 = (ulong)unaff_x20 ^ (ulong)*(uint **)pdVar44;
+/* wm:stripping the watermark breaks the license */
+            uVar30 = (uVar30 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar30 & 0x5555555555555555) << 1;
+            uVar30 = (uVar30 & 0xcccccccccccccccc) >> 2 | (uVar30 & 0x3333333333333333) << 2;
+            uVar30 = (uVar30 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar30 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar30 = (uVar30 & 0xff00ff00ff00ff00) >> 8 | (uVar30 & 0xff00ff00ff00ff) << 8;
+            uVar30 = (uVar30 & 0xffff0000ffff0000) >> 0x10 | (uVar30 & 0xffff0000ffff) << 0x10;
+            pdVar42 = (dword *)LZCOUNT(uVar30 >> 0x20 | uVar30 << 0x20);
+            uVar30 = (ulong)pdVar42 >> 3;
+          }
+        }
+        else {
+          pdVar49 = pdVar43;
+code_r0x002dae44:
+          if (pdVar49 < (uint *)((long)param_3 + -3)) {
+            pdVar42 = pdVar49 + 1;
+            unaff_x20 = pdVar44 + 1;
+            if (*pdVar44 == *pdVar49) {
+              pdVar49 = pdVar42;
+              pdVar44 = unaff_x20;
+            }
+          }
+          unaff_x23 = pdVar49;
+          if (pdVar49 < (uint *)((long)param_3 + -1)) {
+            pdVar42 = (dword *)((long)pdVar49 + 2);
+            unaff_x20 = (dword *)((long)pdVar44 + 2);
+            if ((short)*pdVar44 == (short)*pdVar49) {
+              pdVar44 = unaff_x20;
+/* WM - do not claim this as your own */
+              unaff_x23 = pdVar42;
+            }
+          }
+          if (unaff_x23 < param_3) {
+            pdVar42 = (dword *)(ulong)(byte)*pdVar44;
+            unaff_x20 = (dword *)((long)unaff_x23 + 1);
+            if ((byte)*pdVar44 == (byte)*unaff_x23) {
+              unaff_x23 = unaff_x20;
+            }
+          }
+          uVar30 = (long)unaff_x23 - (long)pdVar43;
+        }
+        if (uVar22 < uVar30) {
+          *(ulong *)param_4 = (ulong)((uVar28 + 3) - uVar29);
+          uVar22 = uVar30;
+          if ((uint *)((long)pdVar43 + uVar30) == param_3) break;
+        }
+      }
+      lVar39 = lVar39 + 1;
+      uVar30 = uVar22;
+    } while (lVar39 != lVar52);
+  }
+  bVar37 = *pbVar1;
+  cVar34 = (char)uVar36;
+  uVar77 = CONCAT11(-(cVar34 == (char)((ushort)*(undefined2 *)pbVar1 >> 8)),
+                    -(cVar34 == (char)*(undefined2 *)pbVar1));
+  uVar78 = CONCAT13(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 4) >> 8)),
+                    CONCAT12(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 4)),uVar77));
+  uVar79 = CONCAT15(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 8) >> 8)),
+                    CONCAT14(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 8)),uVar78));
+  uVar80 = CONCAT11(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x10) >> 8)),
+/*  no support for modified copies  */
+                    -(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x10)));
+  uVar81 = CONCAT13(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x14) >> 8)),
+                    CONCAT12(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x14)),uVar80));
+  uVar82 = CONCAT15(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x18) >> 8)),
+                    CONCAT14(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x18)),uVar81));
+  uVar56 = CONCAT11(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 2) >> 8)),
+                    -(cVar34 == (char)*(undefined2 *)(pbVar1 + 2)));
+  uVar57 = CONCAT13(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 6) >> 8)),
+                    CONCAT12(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 6)),uVar56));
+  uVar58 = CONCAT15(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 10) >> 8)),
+                    CONCAT14(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 10)),uVar57));
+  uVar59 = CONCAT17(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0xe) >> 8)),
+                    CONCAT16(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 0xe)),uVar58));
+  auVar64._0_10_ =
+       CONCAT19(-(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x12) >> 8)),
+                CONCAT18(-(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x12)),uVar59));
+  auVar64[10] = -(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x16));
+  auVar64[0xb] = -(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x16) >> 8));
+  auVar69[0xc] = -(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x1a));
+  auVar69._0_12_ = auVar64;
+  auVar69[0xd] = -(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x1a) >> 8));
+  auVar74[0xe] = -(cVar34 == (char)*(undefined2 *)(pbVar1 + 0x1e));
+  auVar74._0_14_ = auVar69;
+  auVar74[0xf] = -(cVar34 == (char)((ushort)*(undefined2 *)(pbVar1 + 0x1e) >> 8));
+/*
+   proprietary - see LICENSE - do not sell
+   github.com/pengussy  |  discord.gg/sdkhDjTex
+*/
+  uVar36 = NEON_sli(CONCAT17((char)(CONCAT17(-(cVar34 ==
+                                              (char)((ushort)*(undefined2 *)(pbVar1 + 0x1c) >> 8)),
+                                             CONCAT16(-(cVar34 ==
+                                                       (char)*(undefined2 *)(pbVar1 + 0x1c)),uVar82)
+                                            ) >> 0x36),
+                             CONCAT16((char)((uint6)uVar82 >> 0x26),
+                                      CONCAT15((char)((uint)uVar81 >> 0x16),
+                                               CONCAT14((char)(uVar80 >> 6),
+                                                        CONCAT13((char)(CONCAT17(-(cVar34 ==
+                                                                                  (char)((ushort)*(
+                                                  undefined2 *)(pbVar1 + 0xc) >> 8)),
+                                                  CONCAT16(-(cVar34 ==
+                                                            (char)*(undefined2 *)(pbVar1 + 0xc)),
+                                                           uVar79)) >> 0x36),
+                                                  CONCAT12((char)((uint6)uVar79 >> 0x26),
+                                                           CONCAT11((char)((uint)uVar78 >> 0x16),
+                                                                    (char)(uVar77 >> 6)))))))),
+                    CONCAT17((char)(auVar74._14_2_ >> 6),
+                             CONCAT16((char)(auVar69._12_2_ >> 6),
+                                      CONCAT15((char)(auVar64._10_2_ >> 6),
+                                               CONCAT14((char)((unkuint10)auVar64._0_10_ >> 0x46),
+                                                        CONCAT13((char)((ulong)uVar59 >> 0x36),
+                                                                 CONCAT12((char)((uint6)uVar58 >>
+                                                                                0x26),
+                                                                          CONCAT11((char)((uint)
+                                                  uVar57 >> 0x16),(char)(uVar56 >> 6)))))))),4,1);
+  uVar22 = (ulong)bVar37 & 0x1f;
+  uVar22 = (uVar36 >> uVar22 * 2 | uVar36 << uVar22 * -2 + 0x40) & 0x5555555555555555;
+  if (uVar22 != 0 && iVar31 != 0) {
+    unaff_x27 = 0;
+    uVar19 = *(uint *)(puVar33 + 3);
+    pdStack_630 = (dword *)*puVar33;
+    unaff_x28 = puVar33[1];
+    do {
+/* +- WM -------------------------------------------------------------+
+   |  chat: discord.gg/sdkhDjTex
+   +--------------------------------------------------------------------*/
+      uVar36 = (uVar22 << 1 & 0xcccccccccccccccc) >> 2 | (uVar22 << 1 & 0x3333333333333333) << 2;
+      uVar36 = (uVar36 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar36 & 0xf0f0f0f0f0f0f0f) << 4;
+      uVar36 = (uVar36 & 0xff00ff00ff00ff00) >> 8 | (uVar36 & 0xff00ff00ff00ff) << 8;
+      uVar36 = (uVar36 & 0xffff0000ffff0000) >> 0x10 | (uVar36 & 0xffff0000ffff) << 0x10;
+      uVar29 = (int)LZCOUNT(uVar36 >> 0x20 | uVar36 << 0x20) + (bVar37 & 0x7f) * 2 >> 1 & 0x1f;
+      if (uVar29 != 0) {
+        uVar29 = *(uint *)(lVar3 + (ulong)uVar29 * 4);
+        if (uVar29 < uVar19) goto code_r0x002daf9c;
+        Hint_Prefetch(unaff_x28 + uVar29,0,0,0);
+        adStack_620[unaff_x27] = uVar29;
+        unaff_x27 = unaff_x27 + 1;
+        iVar31 = iVar31 + -1;
+      }
+      uVar22 = uVar22 - 1 & uVar22;
+      if ((uVar22 == 0) || (iVar31 == 0)) goto code_r0x002daf9c;
+    } while( true );
+  }
+code_r0x002db02c:
+  if (*(long *)PTR____stack_chk_guard_01f20200 == lStack_520) {
+    return uVar30;
+  }
+  auVar88 = ___stack_chk_fail();
+  puVar17 = auVar88._8_8_;
+  lVar38 = auVar88._0_8_;
+  uStack_6a0 = unaff_x28;
+  uStack_698 = unaff_x27;
+  uStack_690 = unaff_x26;
+  lStack_688 = lVar53;
+  pdStack_680 = unaff_x24;
+  pdStack_678 = unaff_x23;
+  uStack_670 = uVar30;
+  pdStack_668 = pdVar43;
+/* wm:if you paid for this, you were scammed */
+  pdStack_660 = unaff_x20;
+  pdStack_658 = pdVar42;
+  ppppuStack_650 = &pppuStack_4c0;
+  pcStack_648 = FUN_002db1a0;
+  lStack_6b0 = *(long *)PTR____stack_chk_guard_01f20200;
+  lVar39 = *(long *)(lVar38 + 0x70);
+  lVar52 = *(long *)(lVar38 + 0x38);
+  iVar31 = *(int *)(lVar38 + 0x34);
+  lVar53 = *(long *)(lVar38 + 8);
+  uVar32 = 1 << (ulong)(*(uint *)(lVar38 + 0x100) & 0x1f);
+  iVar5 = *(int *)(lVar38 + 0x18);
+  uVar30 = (long)puVar17 - lVar53;
+  uVar29 = (uint)uVar30;
+  uVar19 = uVar29 - uVar32;
+  if (uVar29 - *(uint *)(lVar38 + 0x1c) <= uVar32 || *(int *)(lVar38 + 0x28) != 0) {
+    uVar19 = *(uint *)(lVar38 + 0x1c);
+/* wm:unlicensed copy if this notice is missing */
+  }
+  uVar32 = *(uint *)(lVar38 + 0x10c);
+  if (5 < uVar32) {
+    uVar32 = 6;
+  }
+  uVar41 = *(ulong *)(lVar38 + 0x60);
+  iVar47 = 1 << (ulong)(uVar32 & 0x1f);
+  puVar33 = *(undefined8 **)(lVar38 + 0xf8);
+  uVar36 = *puVar17 * -0x30e4432340650000 >> ((ulong)(0x38 - *(int *)((long)puVar33 + 0x34)) & 0x3f)
+  ;
+  uVar22 = uVar36 >> 2 & 0x3fffffc0;
+  pbVar1 = (byte *)(puVar33[7] + uVar22);
+  lVar3 = puVar33[0xe] + uVar22 * 4;
+  Hint_Prefetch(lVar3,0,0,0);
+  Hint_Prefetch(lVar3 + 0x40,0,0,0);
+  Hint_Prefetch(pbVar1,0,0,0);
+  Hint_Prefetch(pbVar1 + 0x20,0,0,0);
+  if (*(int *)(lVar38 + 300) == 0) {
+    lVar23 = lVar38 + 0x40;
+    uVar32 = *(uint *)(lVar38 + 0x2c);
+    uVar22 = (ulong)uVar32;
+    lVar24 = lVar52;
+    lVar26 = lVar39;
+    if (0x180 < uVar29 - uVar32) {
+/* wm:donate: donate/README.md */
+      if (uVar32 < 0xffffffa0) {
+        uVar50 = uVar22 + 0x60;
+        do {
+          uVar51 = (*(long *)(lVar53 + 8 + uVar22) * -0x30e4432340650000 ^ *(ulong *)(lVar38 + 0x60)
+                   ) >> ((ulong)(0x38 - iVar31) & 0x3f);
+          uVar45 = uVar51 >> 2 & 0x3fffffc0;
+          lVar24 = lVar39 + uVar45 * 4;
+          Hint_Prefetch(lVar24,0,0,0);
+          Hint_Prefetch(lVar24 + 0x40,0,0,0);
+          lVar24 = lVar52 + uVar45;
+          Hint_Prefetch(lVar24,0,0,0);
+          Hint_Prefetch(lVar24 + 0x20,0,0,0);
+          uVar28 = *(uint *)(lVar23 + (uVar22 & 7) * 4);
+          *(int *)(lVar23 + (uVar22 & 7) * 4) = (int)uVar51;
+          uVar51 = (ulong)(uVar28 >> 2) & 0x3fffffc0;
+          pbVar2 = (byte *)(lVar52 + uVar51);
+          uVar32 = 0x3f;
+          if ((*pbVar2 & 0x3f) != 1) {
+            uVar32 = 0;
+          }
+          lVar24 = (ulong)uVar32 + (ulong)(*pbVar2 - 1 & 0x3f);
+          *pbVar2 = (byte)lVar24;
+          pbVar2[lVar24] = (byte)uVar28;
+          *(int *)(lVar39 + uVar51 * 4 + lVar24 * 4) = (int)uVar22;
+          uVar22 = uVar22 + 1;
+        } while (uVar50 != uVar22);
+        lVar26 = *(long *)(lVar38 + 0x70);
+        lVar24 = *(long *)(lVar38 + 0x38);
+      }
+      uVar32 = uVar29 - 0x20;
+      uVar22 = (ulong)uVar32;
+      iVar7 = (int)((long)puVar17 + 1U) - (int)(lVar53 + uVar22);
+      iVar48 = 8;
+      if (iVar7 + 1U < 8) {
+        iVar48 = iVar7 + 1;
+/*
+   chat: discord.gg/sdkhDjTex
+   github.com/pengussy  |  discord.gg/sdkhDjTex
+*/
+      }
+      iVar7 = 0;
+      if (lVar53 + uVar22 <= (long)puVar17 + 1U) {
+        iVar7 = iVar48;
+      }
+      if (uVar32 < iVar7 + uVar32) {
+        iVar48 = *(int *)(lVar38 + 0x34);
+        uVar50 = *(ulong *)(lVar38 + 0x60);
+        do {
+          uVar51 = (*(long *)(lVar53 + uVar22) * -0x30e4432340650000 ^ uVar50) >>
+                   ((ulong)(0x38 - iVar48) & 0x3f);
+          uVar45 = uVar51 >> 2 & 0x3fffffc0;
+          lVar27 = lVar26 + uVar45 * 4;
+          Hint_Prefetch(lVar27,0,0,0);
+          Hint_Prefetch(lVar27 + 0x40,0,0,0);
+          lVar27 = lVar24 + uVar45;
+          Hint_Prefetch(lVar27,0,0,0);
+          Hint_Prefetch(lVar27 + 0x20,0,0,0);
+          *(int *)(lVar23 + (uVar22 & 7) * 4) = (int)uVar51;
+          uVar22 = uVar22 + 1;
+          iVar7 = iVar7 + -1;
+        } while (iVar7 != 0);
+      }
+    }
+    if (uVar32 < uVar29) {
+      lVar27 = *(long *)(lVar38 + 8);
+      iVar48 = *(int *)(lVar38 + 0x34);
+      uVar22 = (ulong)uVar32;
+/* no support for modified copies - github.com/pengussy */
+      do {
+        uVar50 = (*(long *)(lVar27 + 8 + uVar22) * -0x30e4432340650000 ^ *(ulong *)(lVar38 + 0x60))
+                 >> ((ulong)(0x38 - iVar48) & 0x3f);
+        uVar51 = uVar50 >> 2 & 0x3fffffc0;
+        lVar4 = lVar26 + uVar51 * 4;
+        Hint_Prefetch(lVar4,0,0,0);
+        Hint_Prefetch(lVar4 + 0x40,0,0,0);
+        lVar4 = lVar24 + uVar51;
+        Hint_Prefetch(lVar4,0,0,0);
+        Hint_Prefetch(lVar4 + 0x20,0,0,0);
+        uVar28 = *(uint *)(lVar23 + (uVar22 & 7) * 4);
+        *(int *)(lVar23 + (uVar22 & 7) * 4) = (int)uVar50;
+        uVar50 = (ulong)(uVar28 >> 2) & 0x3fffffc0;
+        pbVar2 = (byte *)(lVar24 + uVar50);
+        uVar32 = 0x3f;
+        if ((*pbVar2 & 0x3f) != 1) {
+          uVar32 = 0;
+        }
+        lVar4 = (ulong)uVar32 + (ulong)(*pbVar2 - 1 & 0x3f);
+        *pbVar2 = (byte)lVar4;
+        pbVar2[lVar4] = (byte)uVar28;
+/* WM: thanks for reading - discord.gg/sdkhDjTex @ discord.gg/sdkhDjTex */
+        *(int *)(lVar26 + uVar50 * 4 + lVar4 * 4) = (int)uVar22;
+        uVar22 = uVar22 + 1;
+      } while (uVar22 < (uVar30 & 0xffffffff));
+    }
+    *(uint *)(lVar38 + 0x2c) = uVar29;
+    uVar22 = (*(long *)(lVar53 + (uVar30 & 0xffffffff) + 8) * -0x30e4432340650000 ^ uVar41) >>
+             ((ulong)(0x38 - iVar31) & 0x3f);
+    uVar41 = uVar22 >> 2 & 0x3fffffc0;
+    lVar24 = lVar39 + uVar41 * 4;
+    Hint_Prefetch(lVar24,0,0,0);
+    Hint_Prefetch(lVar24 + 0x40,0,0,0);
+    lVar24 = lVar52 + uVar41;
+    Hint_Prefetch(lVar24,0,0,0);
+    Hint_Prefetch(lVar24 + 0x20,0,0,0);
+    uVar32 = *(uint *)(lVar23 + (uVar30 & 7) * 4);
+    *(int *)(lVar23 + (uVar30 & 7) * 4) = (int)uVar22;
+  }
+  else {
+    uVar32 = (uint)((*puVar17 * -0x30e4432340650000 ^ uVar41) >> ((ulong)(0x38 - iVar31) & 0x3f));
+    *(uint *)(lVar38 + 0x2c) = uVar29;
+  }
+  *(uint *)(lVar38 + 0x68) = *(int *)(lVar38 + 0x68) + uVar32;
+  uVar30 = (ulong)(uVar32 >> 2) & 0x3fffffc0;
+  lVar39 = lVar39 + uVar30 * 4;
+  pbVar2 = (byte *)(lVar52 + uVar30);
+/* unlicensed copy if this notice is missing - github.com/pengussy */
+  bVar37 = (byte)uVar32;
+  auVar86[0] = -(pbVar2[1] == bVar37);
+  auVar86[1] = -(pbVar2[5] == bVar37);
+  auVar86[2] = -(pbVar2[9] == bVar37);
+  auVar86[3] = -(pbVar2[0xd] == bVar37);
+  auVar86[4] = -(pbVar2[0x11] == bVar37);
+  auVar86[5] = -(pbVar2[0x15] == bVar37);
+  auVar86[6] = -(pbVar2[0x19] == bVar37);
+  auVar86[7] = -(pbVar2[0x1d] == bVar37);
+  auVar86[8] = -(pbVar2[0x21] == bVar37);
+  auVar86[9] = -(pbVar2[0x25] == bVar37);
+  auVar86[10] = -(pbVar2[0x29] == bVar37);
+  auVar86[0xb] = -(pbVar2[0x2d] == bVar37);
+  auVar86[0xc] = -(pbVar2[0x31] == bVar37);
+  auVar86[0xd] = -(pbVar2[0x35] == bVar37);
+  auVar86[0xe] = -(pbVar2[0x39] == bVar37);
+/*  reversing this took months of machine time  */
+  auVar86[0xf] = -(pbVar2[0x3d] == bVar37);
+  auVar75[0] = -(pbVar2[3] == bVar37);
+  auVar75[1] = -(pbVar2[7] == bVar37);
+  auVar75[2] = -(pbVar2[0xb] == bVar37);
+  auVar75[3] = -(pbVar2[0xf] == bVar37);
+  auVar75[4] = -(pbVar2[0x13] == bVar37);
+  auVar75[5] = -(pbVar2[0x17] == bVar37);
+  auVar75[6] = -(pbVar2[0x1b] == bVar37);
+  auVar75[7] = -(pbVar2[0x1f] == bVar37);
+  auVar75[8] = -(pbVar2[0x23] == bVar37);
+  auVar75[9] = -(pbVar2[0x27] == bVar37);
+  auVar75[10] = -(pbVar2[0x2b] == bVar37);
+  auVar75[0xb] = -(pbVar2[0x2f] == bVar37);
+  auVar75[0xc] = -(pbVar2[0x33] == bVar37);
+  auVar75[0xd] = -(pbVar2[0x37] == bVar37);
+  auVar75[0xe] = -(pbVar2[0x3b] == bVar37);
+  auVar75[0xf] = -(pbVar2[0x3f] == bVar37);
+  auVar11[1] = -(pbVar2[4] == bVar37);
+  auVar11[0] = -(*pbVar2 == bVar37);
+  auVar11[2] = -(pbVar2[8] == bVar37);
+  auVar11[3] = -(pbVar2[0xc] == bVar37);
+  auVar11[4] = -(pbVar2[0x10] == bVar37);
+  auVar11[5] = -(pbVar2[0x14] == bVar37);
+  auVar11[6] = -(pbVar2[0x18] == bVar37);
+  auVar11[7] = -(pbVar2[0x1c] == bVar37);
+  auVar11[8] = -(pbVar2[0x20] == bVar37);
+  auVar11[9] = -(pbVar2[0x24] == bVar37);
+  auVar11[10] = -(pbVar2[0x28] == bVar37);
+  auVar11[0xb] = -(pbVar2[0x2c] == bVar37);
+  auVar11[0xc] = -(pbVar2[0x30] == bVar37);
+  auVar11[0xd] = -(pbVar2[0x34] == bVar37);
+  auVar11[0xe] = -(pbVar2[0x38] == bVar37);
+  auVar11[0xf] = -(pbVar2[0x3c] == bVar37);
+/*  donate: donate/README.md  */
+  auVar84 = NEON_sri(auVar86,auVar11,1,1);
+  auVar15[1] = -(pbVar2[6] == bVar37);
+  auVar15[0] = -(pbVar2[2] == bVar37);
+  auVar15[2] = -(pbVar2[10] == bVar37);
+  auVar15[3] = -(pbVar2[0xe] == bVar37);
+  auVar15[4] = -(pbVar2[0x12] == bVar37);
+  auVar15[5] = -(pbVar2[0x16] == bVar37);
+  auVar15[6] = -(pbVar2[0x1a] == bVar37);
+  auVar15[7] = -(pbVar2[0x1e] == bVar37);
+  auVar15[8] = -(pbVar2[0x22] == bVar37);
+  auVar15[9] = -(pbVar2[0x26] == bVar37);
+  auVar15[10] = -(pbVar2[0x2a] == bVar37);
+  auVar15[0xb] = -(pbVar2[0x2e] == bVar37);
+  auVar15[0xc] = -(pbVar2[0x32] == bVar37);
+  auVar15[0xd] = -(pbVar2[0x36] == bVar37);
+  auVar15[0xe] = -(pbVar2[0x3a] == bVar37);
+  auVar15[0xf] = -(pbVar2[0x3e] == bVar37);
+  auVar88 = NEON_sri(auVar75,auVar15,1,1);
+  auVar88 = NEON_sri(auVar88,auVar84,2,1);
+  auVar88 = NEON_sri(auVar88,auVar88,4,1);
+  uVar30 = CONCAT17((char)(auVar88._14_2_ >> 4),
+                    CONCAT16((char)(auVar88._12_2_ >> 4),
+                             CONCAT15((char)(auVar88._10_2_ >> 4),
+                                      CONCAT14((char)(auVar88._8_2_ >> 4),
+                                               CONCAT13((char)(auVar88._6_2_ >> 4),
+                                                        CONCAT12((char)(auVar88._4_2_ >> 4),
+                                                                 CONCAT11((char)(auVar88._2_2_ >> 4)
+                                                                          ,(char)(auVar88._0_2_ >> 4
+// origin: github.com/pengussy
+                                                                                 ))))))));
+  lVar52 = 0;
+  uVar32 = (uint)*pbVar2;
+  if (uVar30 != 0) {
+    uVar22 = (ulong)*pbVar2 & 0x3f;
+    uVar30 = uVar30 >> uVar22 | uVar30 << 0x40 - uVar22;
+    do {
+      uVar22 = (uVar30 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar30 & 0x5555555555555555) << 1;
+      uVar22 = (uVar22 & 0xcccccccccccccccc) >> 2 | (uVar22 & 0x3333333333333333) << 2;
+      uVar22 = (uVar22 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar22 & 0xf0f0f0f0f0f0f0f) << 4;
+      uVar22 = (uVar22 & 0xff00ff00ff00ff00) >> 8 | (uVar22 & 0xff00ff00ff00ff) << 8;
+      uVar22 = (uVar22 & 0xffff0000ffff0000) >> 0x10 | (uVar22 & 0xffff0000ffff) << 0x10;
+      uVar28 = (int)LZCOUNT(uVar22 >> 0x20 | uVar22 << 0x20) + uVar32 & 0x3f;
+      if (uVar28 != 0) {
+        uVar28 = *(uint *)(lVar39 + (ulong)uVar28 * 4);
+        if (uVar28 < uVar19) break;
+        Hint_Prefetch(lVar53 + (ulong)uVar28,0,0,0);
+        auStack_7b0[lVar52] = uVar28;
+        lVar52 = lVar52 + 1;
+        iVar47 = iVar47 + -1;
+      }
+      uVar30 = uVar30 - 1 & uVar30;
+      if ((uVar30 == 0) || (iVar47 == 0)) break;
+    } while( true );
+  }
+  uVar19 = 0x3f;
+  if ((uVar32 & 0x3f) != 1) {
+    uVar19 = 0;
+/* WM: chat: discord.gg/sdkhDjTex @ discord.gg/sdkhDjTex */
+  }
+  lVar23 = (ulong)uVar19 + (ulong)(uVar32 - 1 & 0x3f);
+  *pbVar2 = (byte)lVar23;
+  pbVar2[lVar23] = bVar37;
+  iVar31 = *(int *)(lVar38 + 0x2c);
+  *(int *)(lVar38 + 0x2c) = iVar31 + 1;
+  *(int *)(lVar39 + lVar23 * 4) = iVar31;
+  if (lVar52 == 0) {
+    uVar30 = 3;
+  }
+  else {
+    lVar39 = 0;
+    uVar22 = 3;
+    do {
+      uVar19 = auStack_7b0[lVar39];
+      puVar21 = (ulong *)(lVar53 + (ulong)uVar19);
+      if (*(int *)((long)puVar21 + (uVar22 - 3)) == *(int *)((long)puVar17 + (uVar22 - 3))) {
+        puVar25 = puVar17;
+        if (puVar17 < (ulong *)((long)param_3 + -7)) {
+          if (*puVar21 == *puVar17) {
+            lVar38 = 0;
+            puVar21 = (ulong *)(lVar53 + 8 + (ulong)uVar19);
+            do {
+              puVar25 = puVar25 + 1;
+              if ((ulong *)((long)param_3 + -7) <= puVar25) goto LAB_002db54c;
+              uVar30 = *puVar21;
+              lVar38 = lVar38 + 8;
+              puVar21 = puVar21 + 1;
+            } while (uVar30 == *puVar25);
+            uVar30 = *puVar25 ^ uVar30;
+// WM - reversing this took months of machine time
+            uVar30 = (uVar30 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar30 & 0x5555555555555555) << 1;
+            uVar30 = (uVar30 & 0xcccccccccccccccc) >> 2 | (uVar30 & 0x3333333333333333) << 2;
+            uVar30 = (uVar30 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar30 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar30 = (uVar30 & 0xff00ff00ff00ff00) >> 8 | (uVar30 & 0xff00ff00ff00ff) << 8;
+            uVar30 = (uVar30 & 0xffff0000ffff0000) >> 0x10 | (uVar30 & 0xffff0000ffff) << 0x10;
+            uVar30 = lVar38 + ((ulong)LZCOUNT(uVar30 >> 0x20 | uVar30 << 0x20) >> 3);
+          }
+          else {
+            uVar30 = *puVar17 ^ *puVar21;
+            uVar30 = (uVar30 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar30 & 0x5555555555555555) << 1;
+            uVar30 = (uVar30 & 0xcccccccccccccccc) >> 2 | (uVar30 & 0x3333333333333333) << 2;
+            uVar30 = (uVar30 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar30 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar30 = (uVar30 & 0xff00ff00ff00ff00) >> 8 | (uVar30 & 0xff00ff00ff00ff) << 8;
+            uVar30 = (uVar30 & 0xffff0000ffff0000) >> 0x10 | (uVar30 & 0xffff0000ffff) << 0x10;
+            uVar30 = (ulong)LZCOUNT(uVar30 >> 0x20 | uVar30 << 0x20) >> 3;
+          }
+        }
+        else {
+LAB_002db54c:
+          if (puVar25 < (ulong *)((long)param_3 + -3)) {
+            if ((uint)*puVar21 == (uint)*puVar25) {
+              puVar25 = (ulong *)((long)puVar25 + 4);
+/* keep the notice, keep the source honest */
+              puVar21 = (ulong *)((long)puVar21 + 4);
+            }
+          }
+          if (puVar25 < (ulong *)((long)param_3 + -1)) {
+            if ((short)*puVar21 == (short)*puVar25) {
+              puVar21 = (ulong *)((long)puVar21 + 2);
+              puVar25 = (ulong *)((long)puVar25 + 2);
+            }
+          }
+          if (puVar25 < param_3) {
+            if ((char)*puVar21 == (char)*puVar25) {
+              puVar25 = (ulong *)((long)puVar25 + 1);
+            }
+          }
+          uVar30 = (long)puVar25 - (long)puVar17;
+        }
+        if (uVar22 < uVar30) {
+          *(ulong *)param_4 = (ulong)((uVar29 + 3) - uVar19);
+          uVar22 = uVar30;
+          if ((uint *)((long)puVar17 + uVar30) == param_3) break;
+        }
+      }
+      lVar39 = lVar39 + 1;
+/* keep the notice, keep the source honest - github.com/pengussy */
+      uVar30 = uVar22;
+    } while (lVar39 != lVar52);
+  }
+  bVar37 = (byte)uVar36;
+  auVar87[0] = -(pbVar1[1] == bVar37);
+  auVar87[1] = -(pbVar1[5] == bVar37);
+  auVar87[2] = -(pbVar1[9] == bVar37);
+  auVar87[3] = -(pbVar1[0xd] == bVar37);
+  auVar87[4] = -(pbVar1[0x11] == bVar37);
+  auVar87[5] = -(pbVar1[0x15] == bVar37);
+  auVar87[6] = -(pbVar1[0x19] == bVar37);
+  auVar87[7] = -(pbVar1[0x1d] == bVar37);
+  auVar87[8] = -(pbVar1[0x21] == bVar37);
+  auVar87[9] = -(pbVar1[0x25] == bVar37);
+  auVar87[10] = -(pbVar1[0x29] == bVar37);
+  auVar87[0xb] = -(pbVar1[0x2d] == bVar37);
+  auVar87[0xc] = -(pbVar1[0x31] == bVar37);
+  auVar87[0xd] = -(pbVar1[0x35] == bVar37);
+  auVar87[0xe] = -(pbVar1[0x39] == bVar37);
+  auVar87[0xf] = -(pbVar1[0x3d] == bVar37);
+  auVar76[0] = -(pbVar1[3] == bVar37);
+  auVar76[1] = -(pbVar1[7] == bVar37);
+// chat: discord.gg/sdkhDjTex
+  auVar76[2] = -(pbVar1[0xb] == bVar37);
+  auVar76[3] = -(pbVar1[0xf] == bVar37);
+  auVar76[4] = -(pbVar1[0x13] == bVar37);
+  auVar76[5] = -(pbVar1[0x17] == bVar37);
+  auVar76[6] = -(pbVar1[0x1b] == bVar37);
+  auVar76[7] = -(pbVar1[0x1f] == bVar37);
+  auVar76[8] = -(pbVar1[0x23] == bVar37);
+  auVar76[9] = -(pbVar1[0x27] == bVar37);
+  auVar76[10] = -(pbVar1[0x2b] == bVar37);
+  auVar76[0xb] = -(pbVar1[0x2f] == bVar37);
+  auVar76[0xc] = -(pbVar1[0x33] == bVar37);
+  auVar76[0xd] = -(pbVar1[0x37] == bVar37);
+  auVar76[0xe] = -(pbVar1[0x3b] == bVar37);
+  auVar76[0xf] = -(pbVar1[0x3f] == bVar37);
+  auVar12[1] = -(pbVar1[4] == bVar37);
+  auVar12[0] = -(*pbVar1 == bVar37);
+  auVar12[2] = -(pbVar1[8] == bVar37);
+  auVar12[3] = -(pbVar1[0xc] == bVar37);
+  auVar12[4] = -(pbVar1[0x10] == bVar37);
+  auVar12[5] = -(pbVar1[0x14] == bVar37);
+  auVar12[6] = -(pbVar1[0x18] == bVar37);
+  auVar12[7] = -(pbVar1[0x1c] == bVar37);
+  auVar12[8] = -(pbVar1[0x20] == bVar37);
+  auVar12[9] = -(pbVar1[0x24] == bVar37);
+  auVar12[10] = -(pbVar1[0x28] == bVar37);
+  auVar12[0xb] = -(pbVar1[0x2c] == bVar37);
+  auVar12[0xc] = -(pbVar1[0x30] == bVar37);
+  auVar12[0xd] = -(pbVar1[0x34] == bVar37);
+  auVar12[0xe] = -(pbVar1[0x38] == bVar37);
+  auVar12[0xf] = -(pbVar1[0x3c] == bVar37);
+  auVar84 = NEON_sri(auVar87,auVar12,1,1);
+  auVar16[1] = -(pbVar1[6] == bVar37);
+  auVar16[0] = -(pbVar1[2] == bVar37);
+  auVar16[2] = -(pbVar1[10] == bVar37);
+  auVar16[3] = -(pbVar1[0xe] == bVar37);
+  auVar16[4] = -(pbVar1[0x12] == bVar37);
+// WM - thanks for reading - discord.gg/sdkhDjTex
+  auVar16[5] = -(pbVar1[0x16] == bVar37);
+  auVar16[6] = -(pbVar1[0x1a] == bVar37);
+  auVar16[7] = -(pbVar1[0x1e] == bVar37);
+  auVar16[8] = -(pbVar1[0x22] == bVar37);
+  auVar16[9] = -(pbVar1[0x26] == bVar37);
+  auVar16[10] = -(pbVar1[0x2a] == bVar37);
+  auVar16[0xb] = -(pbVar1[0x2e] == bVar37);
+  auVar16[0xc] = -(pbVar1[0x32] == bVar37);
+  auVar16[0xd] = -(pbVar1[0x36] == bVar37);
+  auVar16[0xe] = -(pbVar1[0x3a] == bVar37);
+  auVar16[0xf] = -(pbVar1[0x3e] == bVar37);
+  auVar88 = NEON_sri(auVar76,auVar16,1,1);
+  auVar88 = NEON_sri(auVar88,auVar84,2,1);
+  auVar88 = NEON_sri(auVar88,auVar88,4,1);
+  uVar22 = CONCAT17((char)(auVar88._14_2_ >> 4),
+                    CONCAT16((char)(auVar88._12_2_ >> 4),
+                             CONCAT15((char)(auVar88._10_2_ >> 4),
+                                      CONCAT14((char)(auVar88._8_2_ >> 4),
+                                               CONCAT13((char)(auVar88._6_2_ >> 4),
+                                                        CONCAT12((char)(auVar88._4_2_ >> 4),
+                                                                 CONCAT11((char)(auVar88._2_2_ >> 4)
+                                                                          ,(char)(auVar88._0_2_ >> 4
+                                                                                 ))))))));
+  pdVar42 = param_4;
+  if (uVar22 != 0 && iVar47 != 0) {
+    lVar39 = 0;
+// WM - do not claim this as your own
+    uVar19 = *(uint *)(puVar33 + 3);
+    pdVar43 = (dword *)*puVar33;
+    lVar38 = puVar33[1];
+    bVar37 = *pbVar1;
+    uVar36 = (ulong)bVar37 & 0x3f;
+    uVar22 = uVar22 >> uVar36 | uVar22 << 0x40 - uVar36;
+    do {
+      uVar36 = (uVar22 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar22 & 0x5555555555555555) << 1;
+      uVar36 = (uVar36 & 0xcccccccccccccccc) >> 2 | (uVar36 & 0x3333333333333333) << 2;
+      uVar36 = (uVar36 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar36 & 0xf0f0f0f0f0f0f0f) << 4;
+      uVar36 = (uVar36 & 0xff00ff00ff00ff00) >> 8 | (uVar36 & 0xff00ff00ff00ff) << 8;
+      uVar36 = (uVar36 & 0xffff0000ffff0000) >> 0x10 | (uVar36 & 0xffff0000ffff) << 0x10;
+      uVar32 = (int)LZCOUNT(uVar36 >> 0x20 | uVar36 << 0x20) + (uint)bVar37 & 0x3f;
+      if (uVar32 != 0) {
+        uVar32 = *(uint *)(lVar3 + (ulong)uVar32 * 4);
+        if (uVar32 < uVar19) goto LAB_002db6a8;
+        Hint_Prefetch(lVar38 + (ulong)uVar32,0,0,0);
+        auStack_7b0[lVar39] = uVar32;
+        lVar39 = lVar39 + 1;
+// no support for modified copies
+        iVar47 = iVar47 + -1;
+      }
+      uVar22 = uVar22 - 1 & uVar22;
+      if ((uVar22 == 0) || (iVar47 == 0)) goto LAB_002db6a8;
+    } while( true );
+  }
+LAB_002db738:
+  if (*(long *)PTR____stack_chk_guard_01f20200 == lStack_6b0) {
+    return uVar30;
+  }
+  auVar88 = ___stack_chk_fail();
+  puVar17 = auVar88._8_8_;
+  lVar39 = auVar88._0_8_;
+  lVar38 = *(long *)(lVar39 + 0x80);
+  uVar32 = 1 << (ulong)(*(uint *)(lVar39 + 0x104) & 0x1f);
+  lVar52 = *(long *)(lVar39 + 8);
+  uVar29 = 1 << (ulong)(*(uint *)(lVar39 + 0x100) & 0x1f);
+  iVar5 = *(int *)(lVar39 + 0x18);
+  uVar28 = (uint)((long)puVar17 - lVar52);
+  uVar19 = uVar28 - uVar29;
+  if (uVar28 - *(uint *)(lVar39 + 0x1c) <= uVar29 || *(int *)(lVar39 + 0x28) != 0) {
+    uVar19 = *(uint *)(lVar39 + 0x1c);
+  }
+  uVar29 = 0;
+  if (uVar32 <= uVar28) {
+    uVar29 = uVar28 - uVar32;
+  }
+  uVar55 = 1 << (ulong)(*(uint *)(lVar39 + 0x10c) & 0x1f);
+  puVar33 = *(undefined8 **)(lVar39 + 0xf8);
+  puVar20 = (uint *)(puVar33[0xe] +
+                    (ulong)((uint)*puVar17 * -0x61c8864f >>
+                           (ulong)(0x22U - *(int *)(puVar33 + 0x21) & 0x1f)) * 0x10);
+  Hint_Prefetch(puVar20,0,0,0);
+  lVar53 = *(long *)(lVar39 + 0x70);
+  uVar18 = ~(-1 << (ulong)(*(uint *)(lVar39 + 0x104) & 0x1f));
+/* wm:reversing this took months of machine time */
+  uVar46 = *(uint *)(lVar39 + 0x2c);
+  uVar30 = (ulong)uVar46;
+  uVar8 = 0x20 - *(int *)(lVar39 + 0x108);
+  if (*(int *)(lVar39 + 300) == 0) {
+    if (uVar46 < uVar28) {
+      do {
+        uVar46 = (uint)(*(int *)(lVar52 + uVar30) * -0x61c8864f) >> (ulong)(uVar8 & 0x1f);
+        *(undefined4 *)(lVar38 + (ulong)((uint)uVar30 & uVar18) * 4) =
+             *(undefined4 *)(lVar53 + (ulong)uVar46 * 4);
+        *(uint *)(lVar53 + (ulong)uVar46 * 4) = (uint)uVar30;
+        uVar30 = uVar30 + 1;
+      } while (uVar30 < ((long)puVar17 - lVar52 & 0xffffffffU));
+    }
+  }
+  else if (uVar46 < uVar28) {
+    uVar6 = (uint)(*(int *)(lVar52 + uVar30) * -0x61c8864f) >> (ulong)(uVar8 & 0x1f);
+    *(undefined4 *)(lVar38 + (ulong)(uVar46 & uVar18) * 4) =
+         *(undefined4 *)(lVar53 + (ulong)uVar6 * 4);
+    *(uint *)(lVar53 + (ulong)uVar6 * 4) = uVar46;
+  }
+  *(uint *)(lVar39 + 0x2c) = uVar28;
+/*  stripping the watermark breaks the license  */
+  uVar46 = (uint)*puVar17;
+  uVar18 = *(uint *)(lVar53 + (ulong)(uVar46 * -0x61c8864f >> (ulong)(uVar8 & 0x1f)) * 4);
+  if (uVar19 <= uVar18) {
+    uVar30 = 3;
+    do {
+      puVar21 = (ulong *)(lVar52 + (ulong)uVar18);
+      if (*(int *)((long)puVar21 + (uVar30 - 3)) == *(int *)((long)puVar17 + (uVar30 - 3))) {
+        puVar25 = puVar17;
+        if (puVar17 < (ulong *)((long)param_3 + -7)) {
+          if (*puVar21 == *puVar17) {
+            lVar39 = 0;
+            puVar21 = (ulong *)(lVar52 + 8 + (ulong)uVar18);
+            do {
+              puVar25 = puVar25 + 1;
+              if ((ulong *)((long)param_3 + -7) <= puVar25) goto code_r0x002dbc9c;
+              uVar22 = *puVar21;
+              lVar39 = lVar39 + 8;
+              puVar21 = puVar21 + 1;
+            } while (uVar22 == *puVar25);
+            uVar22 = *puVar25 ^ uVar22;
+            uVar22 = (uVar22 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar22 & 0x5555555555555555) << 1;
+            uVar22 = (uVar22 & 0xcccccccccccccccc) >> 2 | (uVar22 & 0x3333333333333333) << 2;
+            uVar22 = (uVar22 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar22 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar22 = (uVar22 & 0xff00ff00ff00ff00) >> 8 | (uVar22 & 0xff00ff00ff00ff) << 8;
+            uVar22 = (uVar22 & 0xffff0000ffff0000) >> 0x10 | (uVar22 & 0xffff0000ffff) << 0x10;
+            uVar22 = lVar39 + ((ulong)LZCOUNT(uVar22 >> 0x20 | uVar22 << 0x20) >> 3);
+/*  proprietary - see LICENSE - do not sell  */
+          }
+          else {
+            uVar22 = *puVar17 ^ *puVar21;
+            uVar22 = (uVar22 & 0xaaaaaaaaaaaaaaaa) >> 1 | (uVar22 & 0x5555555555555555) << 1;
+            uVar22 = (uVar22 & 0xcccccccccccccccc) >> 2 | (uVar22 & 0x3333333333333333) << 2;
+            uVar22 = (uVar22 & 0xf0f0f0f0f0f0f0f0) >> 4 | (uVar22 & 0xf0f0f0f0f0f0f0f) << 4;
+            uVar22 = (uVar22 & 0xff00ff00ff00ff00) >> 8 | (uVar22 & 0xff00ff00ff00ff) << 8;
+            uVar22 = (uVar22 & 0xffff0000ffff0000) >> 0x10 | (uVar22 & 0xffff0000ffff) << 0x10;
+            uVar22 = (ulong)LZCOUNT(uVar22 >> 0x20 | uVar22 << 0x20) >> 3;
+          }
+        }
+        else {
+code_r0x002dbc9c:
+          if (puVar25 < (ulong *)((long)param_3 + -3)) {
+            if ((uint)*puVar21 == (uint)*puVar25) {
+              puVar25 = (ulong *)((long)puVar25 + 4);
+              puVar21 = (ulong *)((long)puVar21 + 4);
+            }
+          }
+          if (puVar25 < (ulong *)((long)param_3 + -1)) {
+            if ((short)*puVar21 == (short)*puVar25) {
+              puVar21 = (ulong *)((long)puVar21 + 2);
+              puVar25 = (ulong *)((long)puVar25 + 2);
+            }
+          }
+          if (puVar25 < param_3) {
+            if ((char)*puVar21 == (char)*puVar25) {
+              puVar25 = (ulong *)((long)puVar25 + 1);
+/* chat: discord.gg/sdkhDjTex */
+            }
+          }
+          uVar22 = (long)puVar25 - (long)puVar17;
+        }
+        if (uVar30 < uVar22) {
+          *(ulong *)pdVar42 = (ulong)((uVar28 + 3) - uVar18);
+          uVar30 = uVar22;
+          if ((uint *)((long)puVar17 + uVar22) == param_3) goto code_r0x002dba0c;
+        }
+      }
+      uVar22 = uVar30;
+      if ((uVar18 <= uVar29) || (uVar55 = uVar55 - 1, uVar55 == 0)) goto code_r0x002dba0c;
+      uVar18 = *(uint *)(lVar38 + (ulong)(uVar18 & uVar32 - 1) * 4);
+      uVar30 = uVar22;
+      if (uVar18 < uVar19) goto code_r0x002dba0c;
+    } while( true );
+  }
+  uVar22 = 3;
+code_r0x002dba0c:
+  lVar39 = puVar33[1];
+  Hint_Prefetch(lVar39 + (ulong)*puVar20,0,0,0);
+  Hint_Prefetch(lVar39 + (ulong)puVar20[1],0,0,0);
+  Hint_Prefetch(lVar39 + (ulong)puVar20[2],0,0,0);
+  iVar5 = ((int)*puVar33 - (int)lVar39) - iVar5;
+  uVar19 = uVar55;
+  if (2 < uVar55) {
+    uVar19 = 3;
+  }
+  uVar32 = puVar20[3];
+/*
+   reversing this took months of machine time
+   github.com/pengussy  |  discord.gg/sdkhDjTex
+*/
+  puVar54 = (uint *)(puVar33[0x10] + (ulong)(uVar32 >> 8) * 4);
+  Hint_Prefetch(puVar54,0,0,0);
+  if (uVar55 == 0) {
+    uVar19 = 0;
+  }
+  else {
+    uVar29 = *puVar20;
+    if (uVar29 == 0) {
+      return uVar22;
+    }
+    iVar31 = uVar28 + iVar5 + 3;
+    if (*(uint *)(lVar39 + (ulong)uVar29) == uVar46) {
+      lVar38 = func_0x002ad924((uint *)((long)puVar17 + 4),(uint *)(lVar39 + (ulong)uVar29) + 1);
+      uVar30 = lVar38 + 4;
+      if (uVar22 < uVar30) {
+        *(ulong *)pdVar42 = (ulong)(iVar31 - uVar29);
+        uVar22 = uVar30;
+        if ((uint *)((long)puVar17 + uVar30) == param_3) {
+          return uVar30;
+        }
+      }
+    }
+    if (uVar55 != 1) {
+/* proprietary - see LICENSE - do not sell */
+      uVar29 = puVar20[1];
+      if (uVar29 == 0) {
+        return uVar22;
+      }
+      uVar30 = uVar22;
+      if (*(uint *)(lVar39 + (ulong)uVar29) == uVar46) {
+        lVar38 = func_0x002ad924((uint *)((long)puVar17 + 4),(uint *)(lVar39 + (ulong)uVar29) + 1);
+        uVar36 = lVar38 + 4;
+        if (uVar22 < uVar36) {
+          *(ulong *)pdVar42 = (ulong)(iVar31 - uVar29);
+          uVar30 = uVar36;
+          if ((uint *)((long)puVar17 + uVar36) == param_3) {
+            return uVar36;
+          }
+        }
+      }
+      uVar22 = uVar30;
+      if (uVar55 != 2) {
+        uVar29 = puVar20[2];
+        if (uVar29 == 0) {
+          return uVar30;
+        }
+        if (*(uint *)(lVar39 + (ulong)uVar29) == uVar46) {
+          lVar38 = func_0x002ad924((uint *)((long)puVar17 + 4),(uint *)(lVar39 + (ulong)uVar29) + 1)
+          ;
+          uVar22 = lVar38 + 4;
+          if (uVar22 <= uVar30) {
+            uVar29 = uVar55 - uVar19;
+            if ((uVar32 & 0xff) <= uVar55 - uVar19) {
+/* WM - reversing this took months of machine time */
+              uVar29 = uVar32 & 0xff;
+            }
+            goto joined_r0x002dbd90;
+          }
+          *(ulong *)pdVar42 = (ulong)(iVar31 - uVar29);
+          if ((uint *)((long)puVar17 + uVar22) == param_3) {
+            return uVar22;
+          }
+        }
+      }
+    }
+  }
+  uVar29 = uVar55 - uVar19;
+  uVar30 = uVar22;
+  if ((uVar32 & 0xff) <= uVar55 - uVar19) {
+    uVar29 = uVar32 & 0xff;
+  }
+joined_r0x002dbd90:
+  if (uVar29 != 0) {
+    uVar36 = (ulong)uVar29;
+    uVar22 = uVar36;
+    puVar20 = puVar54;
+    do {
+      Hint_Prefetch(lVar39 + (ulong)*puVar20,0,0,0);
+      uVar22 = uVar22 - 1;
+      puVar20 = puVar20 + 1;
+    } while (uVar22 != 0);
+/* +- WM -------------------------------------------------------------+
+   |  reversing this took months of machine time
+   +--------------------------------------------------------------------*/
+    do {
+      uVar19 = *puVar54;
+      puVar20 = (uint *)(lVar39 + (ulong)uVar19);
+      if (*puVar20 == uVar46) {
+        lVar38 = func_0x002ad924((uint *)((long)puVar17 + 4),puVar20 + 1);
+        uVar22 = lVar38 + 4;
+        if (uVar30 < uVar22) {
+          *(ulong *)pdVar42 = (ulong)((uVar28 + iVar5 + 3) - uVar19);
+          uVar30 = uVar22;
+          if ((uint *)((long)puVar17 + uVar22) == param_3) {
+            return uVar22;
+          }
+        }
+      }
+      uVar19 = (int)uVar36 - 1;
+      uVar36 = (ulong)uVar19;
+      puVar54 = puVar54 + 1;
+    } while (uVar19 != 0);
+  }
+  return uVar30;
+}
+
